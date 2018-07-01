@@ -630,18 +630,20 @@
 	{
 		margin-top: 1em;
 	}
-@media (min-width: 1100px) {
-  h1:after {
-    content: 'Large screen';
-  }
+/*  #Desktop 
+================================================== */
+.mobile {
+    display: none;
 }
-@media (max-width: 1100px) {
-  h1:after {
-    content: 'Medium screen';
-  }
-}
-@media (max-width: 480px) {
-  h1:after {
-    content: 'Small screen';
-  }
+
+
+/*  #Mobile 
+================================================== */
+@media only screen and (max-device-width: 480px) {
+    .desktop {
+       display: none;
+    }       
+    .mobile {
+       display: block;
+    }
 }
