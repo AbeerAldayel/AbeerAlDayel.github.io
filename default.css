@@ -641,7 +641,7 @@
 /*  #Mobile 
 ================================================== */
 @media only screen and (max-device-width: 760px){
-    body{ overflow: auto;
+    body{ overflow: hidden;
      -ms-overflow-style: none;
      AutoScroll:false; 
     }
