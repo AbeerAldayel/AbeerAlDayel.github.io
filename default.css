@@ -644,6 +644,10 @@
         zoom: 41%;
         /* width: 41%;*/
     }
+    #header
+    {
+     zoom: 41%;   
+    }
     
 }
 
@@ -652,11 +656,19 @@
         zoom: 67%;
        /* width: 67%; */
     }
+    #header
+    {
+     zoom: 67%;   
+    }
 }
 
 @media only screen and (min-device-width: 960px){
     #footer-wrapper {
         zoom: 98%;
        /* width: 98%; */
+    }
+    #header
+    {
+     zoom: 98%;   
     }
 }
