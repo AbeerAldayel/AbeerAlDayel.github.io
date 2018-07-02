@@ -639,13 +639,19 @@
 
 /*  #Mobile 
 ================================================== */
-@media only screen and (max-device-width: 479px){
+@media only screen and (max-device-width: 760px){
+    body{ overflow: auto;
+    -webkit-overflow-scrolling: touch;
+     overflow: hidden;
+     AutoScroll:false; 
+    }
     #footer-wrapper {
         zoom: 41%;
         /* width: 41%;*/
     }
-    #menu
+    #header
     {
+        overflow: hidden;
      zoom: 41%;   
     }
     
@@ -656,7 +662,7 @@
         zoom: 67%;
        /* width: 67%; */
     }
-    #menu
+    #header
     {
      zoom: 67%;   
     }
@@ -667,7 +673,7 @@
         zoom: 98%;
        /* width: 98%; */
     }
-    #menu
+    #header
     {
      zoom: 98%;   
     }
