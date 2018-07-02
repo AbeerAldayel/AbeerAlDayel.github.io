@@ -642,17 +642,20 @@
 @media only screen and (max-device-width: 479px){
     #footer-wrapper {
         zoom: 41%;
+        width: 41%;
     }
 }
 
 @media only screen and (max-device-width: 959px) {
     #footer-wrapper{
         zoom: 67%;
+        width: 67%;
     }
 }
 
 @media only screen and (min-device-width: 960px){
     #footer-wrapper {
         zoom: 98%;
+        width: 98%;
     }
 }
