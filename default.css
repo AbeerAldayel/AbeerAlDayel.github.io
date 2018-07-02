@@ -639,11 +639,20 @@
 
 /*  #Mobile 
 ================================================== */
-@media only screen and (max-device-width: 480px) {
-    .desktop {
-       display: none;
-    }       
-    .mobile {
-       display: block;
+@media only screen and (max-device-width: 479px){
+    #banner-wrapper {
+        zoom: 41%;
+    }
+}
+
+@media only screen and (max-device-width: 959px) {
+    #banner-wrapper {
+        zoom: 67%;
+    }
+}
+
+@media only screen and (min-device-width: 960px){
+    #banner-wrapper {
+        zoom: 98%;
     }
 }
