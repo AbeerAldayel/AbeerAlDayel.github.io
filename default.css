@@ -644,6 +644,8 @@
         zoom: 41%;
         width: 41%;
     }
+    #header {zoom: 41%;
+        width: 41%;}
 }
 
 @media only screen and (max-device-width: 959px) {
@@ -651,6 +653,8 @@
         zoom: 67%;
         width: 67%;
     }
+     #header {zoom: 67%;
+        width: 67%;}
 }
 
 @media only screen and (min-device-width: 960px){
@@ -658,4 +662,6 @@
         zoom: 98%;
         width: 98%;
     }
+     #header {zoom: 98%;
+        width: 98%;}
 }
