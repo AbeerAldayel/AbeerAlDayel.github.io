@@ -640,19 +640,19 @@
 /*  #Mobile 
 ================================================== */
 @media only screen and (max-device-width: 479px){
-    #banner-wrapper {
+    #fbox1 {
         zoom: 41%;
     }
 }
 
 @media only screen and (max-device-width: 959px) {
-    #banner-wrapper {
+    #fbox1{
         zoom: 67%;
     }
 }
 
 @media only screen and (min-device-width: 960px){
-    #banner-wrapper {
+    #fbox1 {
         zoom: 98%;
     }
 }
