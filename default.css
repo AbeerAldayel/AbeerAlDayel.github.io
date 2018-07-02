@@ -659,9 +659,9 @@
 
 @media only screen and (max-device-width: 959px) {
      body{ overflow: auto;
-    -webkit-overflow-scrolling: touch;
+   
      overflow: hidden;
-     AutoScroll:false; 
+     
     }
     #footer-wrapper{
         zoom: 67%;
