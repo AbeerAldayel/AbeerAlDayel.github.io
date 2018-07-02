@@ -645,15 +645,15 @@
      -ms-overflow-style: none;
      AutoScroll:false; 
     }
-   /* #footer-wrapper {
+   #footer-wrapper {
         zoom: 41%;
         /* width: 41%;*/
-   /* }
+    }
     #header
     {
         overflow: hidden;
      zoom: 41%;   
-    }*/
+    }
     
 }
 
