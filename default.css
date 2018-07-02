@@ -661,7 +661,7 @@
      body{ overflow: auto;
    
      overflow: hidden;
-     
+      -ms-overflow-style: none;
     }
     #footer-wrapper{
         zoom: 67%;
