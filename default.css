@@ -641,36 +641,28 @@
 ================================================== */
 @media only screen and (max-device-width: 760px){
     body{ overflow: auto;
-    -webkit-overflow-scrolling: touch;
-     overflow: hidden;
+     -ms-overflow-style: none;
      AutoScroll:false; 
     }
-    #footer-wrapper {
+   /* #footer-wrapper {
         zoom: 41%;
         /* width: 41%;*/
-    }
+   /* }
     #header
     {
         overflow: hidden;
      zoom: 41%;   
-    }
+    }*/
     
 }
 
 @media only screen and (max-device-width: 959px) {
      body{ overflow: auto;
    
-     overflow: hidden;
+     overflow: hidden; 
       -ms-overflow-style: none;
     }
-    #footer-wrapper{
-        zoom: 67%;
-       /* width: 67%; */
-    }
-    #header
-    {
-     zoom: 67%;   
-    }
+    
 }
 
 @media only screen and (min-device-width: 960px){
