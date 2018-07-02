@@ -438,8 +438,7 @@
 	{
 		padding: 1em 1.5em;
 		text-decoration: none;
-		font-weight: 600;
-                font-size: 16PX;
+		font-weight: 400;
 		color: rgba(0,0,0,.8);
 	}
 	
@@ -641,11 +640,11 @@
 /*  #Mobile 
 ================================================== */
 @media only screen and (max-device-width: 760px){
-    body{ overflow: hidden;
+    body{ overflow: auto;
      -ms-overflow-style: none;
      AutoScroll:false; 
     }
-   #footer-wrapper {
+    #footer-wrapper {
         zoom: 41%;
         /* width: 41%;*/
     }
@@ -663,7 +662,14 @@
      overflow: hidden; 
       -ms-overflow-style: none;
     }
-    
+    #footer-wrapper{
+        zoom: 67%;
+       /* width: 67%; */
+    }
+    #header
+    {
+     zoom: 67%;   
+    }
 }
 
 @media only screen and (min-device-width: 960px){
