@@ -251,6 +251,7 @@
 		margin: 0em 0 3em 0;
 		padding-top: 1em;
 		text-align: center;
+                float: center;
 	}
 	
 	ul.contact li
