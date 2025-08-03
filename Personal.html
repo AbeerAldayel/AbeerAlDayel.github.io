@@ -56,6 +56,80 @@
     text-decoration: none;
     color: #683205;
 }
+#content-container {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+}
+#sidebar {
+    flex: 0 0 270px;
+}
+#sidebar iframe {
+    width: 100%;
+    border: none;
+}
+.blog-widget {
+    margin-top: 25px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+.blog-widget h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+.blog-widget ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.blog-widget li {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+.blog-widget a {
+    text-decoration: none;
+    color: #333;
+}
+.blog-widget a:hover {
+    text-decoration: underline;
+}
+#main-content {
+    flex: 1;
+}
+.section-block {
+    margin-bottom: 40px;
+}
+.separator {
+    border: none;
+    height: 2px;
+    background-color: #ddd;
+    margin: 10px 0 15px 0;
+}
+.gr_grid_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.gr_grid_book_container img {
+    width: 98px;
+    height: 160px;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+.gr_grid_book_container img:hover {
+    transform: scale(1.05);
+}
+.view-more {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #683205;
+}
 </style>
 </head>
 
@@ -100,7 +174,7 @@
         <div id="main-content">
             
             <!-- Blog Section -->
-            <div class="section-block" id="blog">
+            <div class="blog-widget" id="blog">
                 <h2>📖 Latest Blog Posts</h2>
                 <hr class="separator"/>
                 <ul>
