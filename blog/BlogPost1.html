@@ -103,104 +103,61 @@
     margin-left: auto;
     margin-right: auto;
 }
-/* ====== MOBILE FIX OVERRIDES (place at very end) ====== */
+/* ===== FIX: header layout (desktop + mobile) ===== */
 
-/* Always allow vertical scrolling on mobile */
-html, body {
-  height: auto !important;
-  overflow-y: auto !important;
-  overflow-x: hidden !important;
-  -webkit-overflow-scrolling: touch;
+/* Make header a flex row so menu never overlaps logo */
+#header.container{
+  display:flex !important;
+  align-items:flex-start !important;
+  justify-content:space-between !important;
+  gap:16px !important;
+  flex-wrap:wrap !important;
 }
 
-/* Kill the template fixed-width + overflow clipping */
-.container {
-  width: 100% !important;
-  max-width: 980px !important;
-  overflow: visible !important;
-  padding-left: 14px !important;
-  padding-right: 14px !important;
-  box-sizing: border-box !important;
+/* Logo block: keep it its own column */
+#logo{
+  flex:0 0 auto !important;
+  max-width:320px !important;
+  position:relative !important;
 }
 
-/* Banner + wrappers must not clip/lock scrolling */
-#banner-wrapper,
-#page-wrapper {
-  overflow: visible !important;
-  padding: 2em 0em !important; /* less empty space on mobile */
+/* Menu block: always on the right */
+#menu{
+  flex:1 1 auto !important;
+  display:flex !important;
+  justify-content:flex-end !important;
+  position:relative !important;
+  top:auto !important;
+  right:auto !important;
+  margin-top:8px !important;
 }
 
-/* Stop flex sidebar layout on mobile */
-#content-container {
-  display: block !important;
+/* Kill floats from the template */
+#menu ul{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  justify-content:flex-end !important;
+  gap:8px 16px !important;
+  margin:0 !important;
+  padding:0 !important;
+}
+#menu li{ float:none !important; }
+
+/* Make links compact and prevent weird wrapping */
+#menu li a{
+  display:inline-block !important;
+  padding:6px 8px !important;
+  line-height:1.2 !important;
+  font-size:14px !important;
+  white-space:nowrap !important;
 }
 
-/* If any sidebar remains, hide it */
-#sidebar,
-#sidebar-nav {
-  display: none !important;
+/* On smaller widths: let logo take full width, menu drops nicely under it */
+@media (max-width: 900px){
+  #logo{ max-width:100% !important; }
+  #menu{ width:100% !important; justify-content:flex-start !important; }
+  #menu ul{ justify-content:flex-start !important; }
 }
-
-/* Header: remove absolute positioning on mobile to avoid overlap */
-@media only screen and (max-width: 760px) {
-
-  #header {
-    position: relative !important;
-    padding: 1.2em 0em !important;
-    zoom: 100% !important;     /* cancel zoom */
-    overflow: visible !important;
-  }
-
-  #logo {
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    text-align: left !important;
-    margin-bottom: 10px !important;
-  }
-
-  #menu {
-    position: relative !important;
-    top: auto !important;
-    right: auto !important;
-    width: 100% !important;
-  }
-
-  #menu ul {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    gap: 6px 10px !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  #menu li {
-    float: none !important;
-  }
-
-  #menu li a {
-    padding: 6px 8px !important;
-    font-size: 13px !important;
-  }
-}
-
-/* Slightly larger phones/tablets */
-@media only screen and (max-width: 959px) {
-  body { overflow: auto !important; }  /* override your overflow:hidden */
-  #header { zoom: 100% !important; }   /* cancel zoom */
-  #footer-wrapper { zoom: 100% !important; }
-}
-
-/* Make text readable */
-.post-title {
-  line-height: 1.2 !important;
-}
-
-.post-body, .post-body p, blockquote {
-  overflow-wrap: break-word;
-  word-break: break-word;
-}
-
 
 </style>
 </head>
