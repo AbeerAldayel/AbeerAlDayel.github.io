@@ -12,60 +12,98 @@
 
 <style>
 #content-container {
-    display: flex;
-    gap: 25px;
+    display: block;
     margin-top: 20px;
 }
+
+/* hide the old sidebar box completely */
 #sidebar {
-    flex: 0 0 270px;
+    display: none;
 }
-.blog-widget {
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 5px;
-    max-height: 400px;
-    overflow-y: auto;
+
+/* Horizontal blog strip */
+.blog-strip {
+    margin-bottom: 20px;
 }
-.blog-widget h3 {
+
+.blog-strip h3 {
     font-size: 16px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     border-bottom: 1px solid #ddd;
-    padding-bottom: 5px;
+    padding-bottom: 6px;
 }
-.blog-widget ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
+
+.blog-strip-scroll {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    border-radius: 6px;
 }
-.blog-widget li {
+
+.blog-strip-item {
+    flex: 0 0 auto;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px 14px;
+    border-radius: 6px;
     font-size: 14px;
-    margin-bottom: 6px;
-}
-.blog-widget a {
     text-decoration: none;
     color: #333;
+    white-space: nowrap;
 }
-.blog-widget a:hover {
-    text-decoration: underline;
+
+.blog-strip-item:hover {
+    background: #eee;
 }
+
 #main-content {
-    flex: 1;
+    width: 100%;
 }
+
 .post-title {
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 10px;
 }
+
 .post-meta {
     font-size: 13px;
     color: #777;
     margin-bottom: 20px;
 }
+
 .post-body {
     font-size: 16px;
     line-height: 1.6;
 }
+
+/* video sizing */
+.memory-video {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.memory-video video {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    border-radius: 6px;
+}
+
+.video-caption {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    font-style: italic;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 </style>
 </head>
 
@@ -92,99 +130,98 @@
 <div id="banner-wrapper"></div>
 
 <div id="page-wrapper">
-    <div id="content-container" class="container">
+   <div id="content-container" class="container">
 
-        <!-- Sidebar with Blog Links -->
-        <div id="sidebar">
-            <div class="blog-widget">
-                <h3>🖊️ Other Blog Posts</h3>
-                <ul>
-                    <li><a href="BlogPost1.html">✨ In Memory of My Beloved Father (28 July 2025)</a></li>
-                    
-                    
-                </ul>
-            </div>
+    <!-- Horizontal Blog Navigation -->
+    <div class="blog-strip">
+        <h3>🖊️ Other Blog Posts</h3>
+
+        <div class="blog-strip-scroll">
+            <a href="BlogPost1.html" class="blog-strip-item">
+                ✨ In Memory of My Beloved Father (28 July 2025)
+            </a>
+            <!-- add more posts here -->
         </div>
-
-        <!-- Main Blog Content -->
-       <!-- Main Blog Content -->
-<div id="main-content">
-    <div class="post-title">In Memory of My Beloved Father (28 July 2025)</div>
-    <div class="post-meta">Written on 12 Dec 2025, Abeer Ibraheem Aldayel</div>
-
-    <div class="post-body">
-
-        <p>
-            Life unfolds in moments we wish hadn't occurred, yet it continues to hone and refine us. Everyone carries their share of pain and suffering. 
-            Some choose to voice it, while others honor it in silence, practicing what we call “صبر جميل,” a beautiful patience that seeks not to 
-            spread sorrow, fearing it would weaken other souls. 
-            Instead, it strives to be a light for others, knowing that life is not easy for anyone.
-
-        </p>
-
-        <p>
-            With graceful patience…this is my share, not to burden anyone, but to honor my beloved father. The hidden soul who fought an awful disease for the past two years. 
-            His strength through that time was my shoulder to lean on, with his courage lifting my spirit even in the midst of his own deepest pain. 
-            My journey was defined by his persistent support, with him walking beside me in every chapter of my story, turning my dreams into our shared victories. 
-
-        </p>
-
-        
-        <p>He used to say:</p>
-
-        <blockquote>
-            “Watch for the negative sign before the positive. The negative is not a mistake or something to be ignored. 
-            It’s a given that is not weakening the equation, rather it will add to the unique equation's meaning. 
-            It must be included in the equation (he would even emphasize that with a long dash, **making the minus massively visible** even if that makes the digit alongside appear tiny!)
-        </blockquote>
-
-        <p>
-            He taught me that what is missing is not erased, but acknowledged and reworked into meaning.
-In life, as in math, we count the losses not as absence, but as part of the whole. I have carried my share of negatives far too early in my life, but still these minuses are like terms in a long equation. They are not meant to cancel out the outcome. They reshape the parameters of the journey. The goal is not simply to reach a positive outcome (Life has never been pure or positive smooth for anyone). Instead, the goal is to arrive at an outcome with lasting impact and meaning, not dimming the essence of moving and adding other terms to deepen the expression of our equations.
-
-        </p>
-
-        <p>
-             True patience is not just quiet endurance. It is the awareness that even the minus has meaning and that meaning reshapes us.
-        </p>
-
-        <p>
-           He spoke wisdom in little scraps, and I became who I am because he believed I could.
-        </p>
-
-        <p>
-            As life unfolds beyond what I ever imagined, I draw strength from his faith, his patience and the love he planted in my heart honoring his heritage in my prayers and carrying his faith and kindness forward.
-
-        </p>
- <p dir="rtl" style="text-align: right;">
-            الحمدلله على ما قضى وقدر.  
-            اللهم ارحم من كان سندي ويميني،  
-            واغفر لمن كان قطعة من قلبي.  
-            اللهم ارحم والدي واغفر له مغفرةً تبلغه جنتك يا الله.
-        </p>
-        <blockquote>
-            “The thing about death is that it’s not just the person who dies. It’s the endless versions of them, the moments, the memories, the conversations you’ll never have.” 
-            <br>— Matt Haig, The Midnight Library</br> 
-        </blockquote>
-
-       
     </div>
+
+    <!-- Main Blog Content -->
+    <div id="main-content">
+        <div class="post-title">In Memory of My Beloved Father (28 July 2025)</div>
+        <div class="post-meta">Written on 12 Dec 2025, Abeer Ibraheem Aldayel</div>
+
+        <div class="post-body">
+
+            <p>
+                Life unfolds in moments we wish hadn't occurred, yet it continues to hone and refine us. Everyone carries their share of pain and suffering. 
+                Some choose to voice it, while others honor it in silence, practicing what we call “صبر جميل,” a beautiful patience that seeks not to 
+                spread sorrow, fearing it would weaken other souls. 
+                Instead, it strives to be a light for others, knowing that life is not easy for anyone.
+            </p>
+
+            <p>
+                With graceful patience…this is my share, not to burden anyone, but to honor my beloved father. The hidden soul who fought an awful disease for the past two years. 
+                His strength through that time was my shoulder to lean on, with his courage lifting my spirit even in the midst of his own deepest pain. 
+                My journey was defined by his persistent support, with him walking beside me in every chapter of my story, turning my dreams into our shared victories. 
+            </p>
+
+            <p>He used to say:</p>
+
+            <blockquote>
+                “Watch for the negative sign before the positive. The negative is not a mistake or something to be ignored. 
+                It’s a given that is not weakening the equation, rather it will add to the unique equation's meaning. 
+                It must be included in the equation (he would even emphasize that with a long dash, **making the minus massively visible** even if that makes the digit alongside appear tiny!)
+            </blockquote>
+
+            <p>
+                He taught me that what is missing is not erased, but acknowledged and reworked into meaning.
+                In life, as in math, we count the losses not as absence, but as part of the whole. I have carried my share of negatives far too early in my life, but still these minuses are like terms in a long equation. They are not meant to cancel out the outcome. They reshape the parameters of the journey. The goal is not simply to reach a positive outcome (Life has never been pure or positive smooth for anyone). Instead, the goal is to arrive at an outcome with lasting impact and meaning, not dimming the essence of moving and adding other terms to deepen the expression of our equations.
+            </p>
+
+            <p>
+                True patience is not just quiet endurance. It is the awareness that even the minus has meaning and that meaning reshapes us.
+            </p>
+
+            <p>
+                He spoke wisdom in little scraps, and I became who I am because he believed I could.
+            </p>
+
+            <p>
+                As life unfolds beyond what I ever imagined, I draw strength from his faith, his patience and the love he planted in my heart honoring his heritage in my prayers and carrying his faith and kindness forward.
+            </p>
+
+            <p dir="rtl" style="text-align: right;">
+                الحمدلله على ما قضى وقدر.  
+                اللهم ارحم من كان سندي ويميني،  
+                واغفر لمن كان قطعة من قلبي.  
+                اللهم ارحم والدي واغفر له مغفرةً تبلغه جنتك يا الله.
+            </p>
+
+            <blockquote>
+                “The thing about death is that it’s not just the person who dies. It’s the endless versions of them, the moments, the memories, the conversations you’ll never have.”
+                <br />— Matt Haig, The Midnight Library
+            </blockquote>
+
+            <hr />
+
+            <div class="memory-video">
+                <video controls="controls" preload="metadata">
+                    <source src="MyMovie.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+
+                <p class="video-caption">
+                    From my PhD graduation ceremony, <strong>30 November 2021</strong>.
+                    My father’s voice in the background cheering... present, eternal
+                </p>
+            </div>
+
+        </div>
+    </div>
+
 </div>
-       </div>
+
     
-    <hr />
-
-<div class="memory-video">
-    <video controls="controls" preload="metadata">
-        <source src="MyMovie.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-    </video>
-
-    <p class="video-caption">
-        From my PhD graduation ceremony, <strong>30 November 2021</strong>.
-        My father’s voice in the background cheering... present, eternal
-    </p>
-</div>
+   
 
 
 <!-- Footer -->
