@@ -2,6 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 <title>Abeer AlDayel</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
@@ -101,6 +103,64 @@
     max-width: 560px;
     margin-left: auto;
     margin-right: auto;
+}
+/* Mobile clean layout */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Make template container responsive */
+.container {
+    width: 100% !important;
+    max-width: 980px; /* desktop */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+/* Ensure main content doesn't overflow */
+#page-wrapper, #content-container, #main-content, .post-body {
+    max-width: 100%;
+}
+
+/* Prevent long text/quotes from forcing horizontal scroll */
+.post-body, .post-body p, blockquote {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+/* Mobile typography + spacing */
+@media (max-width: 768px) {
+    .post-title {
+        font-size: 22px;
+        line-height: 1.25;
+    }
+
+    .post-meta {
+        font-size: 12px;
+        margin-bottom: 14px;
+    }
+
+    .post-body {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    blockquote {
+        margin: 14px 0;
+        padding: 10px 12px;
+    }
+
+    .blog-strip-scroll {
+        padding: 10px;
+    }
 }
 
 
