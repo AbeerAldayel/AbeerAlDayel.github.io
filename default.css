@@ -823,7 +823,6 @@
      zoom: 98%;   
     }
 }
-
 .memory-video {
     margin-top: 30px;
     text-align: center;
@@ -831,14 +830,18 @@
 
 .memory-video video {
     width: 100%;
-    max-width: 720px;
+    max-width: 560px;   /* 👈 medium size */
+    height: auto;
     border-radius: 6px;
 }
 
 .video-caption {
     font-size: 14px;
     color: #666;
-    margin-top: 8px;
+    margin-top: 10px;
     font-style: italic;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
