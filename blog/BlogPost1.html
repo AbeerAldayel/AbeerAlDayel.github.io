@@ -3,7 +3,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
 <title>Abeer AlDayel</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
@@ -104,64 +103,104 @@
     margin-left: auto;
     margin-right: auto;
 }
-/* Mobile clean layout */
+/* ====== MOBILE FIX OVERRIDES (place at very end) ====== */
+
+/* Always allow vertical scrolling on mobile */
 html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+  height: auto !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  -webkit-overflow-scrolling: touch;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-/* Make template container responsive */
+/* Kill the template fixed-width + overflow clipping */
 .container {
+  width: 100% !important;
+  max-width: 980px !important;
+  overflow: visible !important;
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+  box-sizing: border-box !important;
+}
+
+/* Banner + wrappers must not clip/lock scrolling */
+#banner-wrapper,
+#page-wrapper {
+  overflow: visible !important;
+  padding: 2em 0em !important; /* less empty space on mobile */
+}
+
+/* Stop flex sidebar layout on mobile */
+#content-container {
+  display: block !important;
+}
+
+/* If any sidebar remains, hide it */
+#sidebar,
+#sidebar-nav {
+  display: none !important;
+}
+
+/* Header: remove absolute positioning on mobile to avoid overlap */
+@media only screen and (max-width: 760px) {
+
+  #header {
+    position: relative !important;
+    padding: 1.2em 0em !important;
+    zoom: 100% !important;     /* cancel zoom */
+    overflow: visible !important;
+  }
+
+  #logo {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    text-align: left !important;
+    margin-bottom: 10px !important;
+  }
+
+  #menu {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
     width: 100% !important;
-    max-width: 980px; /* desktop */
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 14px;
-    padding-right: 14px;
+  }
+
+  #menu ul {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 6px 10px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  #menu li {
+    float: none !important;
+  }
+
+  #menu li a {
+    padding: 6px 8px !important;
+    font-size: 13px !important;
+  }
 }
 
-/* Ensure main content doesn't overflow */
-#page-wrapper, #content-container, #main-content, .post-body {
-    max-width: 100%;
+/* Slightly larger phones/tablets */
+@media only screen and (max-width: 959px) {
+  body { overflow: auto !important; }  /* override your overflow:hidden */
+  #header { zoom: 100% !important; }   /* cancel zoom */
+  #footer-wrapper { zoom: 100% !important; }
 }
 
-/* Prevent long text/quotes from forcing horizontal scroll */
+/* Make text readable */
+.post-title {
+  line-height: 1.2 !important;
+}
+
 .post-body, .post-body p, blockquote {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    word-break: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
-/* Mobile typography + spacing */
-@media (max-width: 768px) {
-    .post-title {
-        font-size: 22px;
-        line-height: 1.25;
-    }
-
-    .post-meta {
-        font-size: 12px;
-        margin-bottom: 14px;
-    }
-
-    .post-body {
-        font-size: 15px;
-        line-height: 1.7;
-    }
-
-    blockquote {
-        margin: 14px 0;
-        padding: 10px 12px;
-    }
-
-    .blog-strip-scroll {
-        padding: 10px;
-    }
-}
 
 
 </style>
