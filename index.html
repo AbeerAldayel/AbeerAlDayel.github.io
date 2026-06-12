@@ -149,11 +149,21 @@ a:hover { text-decoration: underline; }
 }
 
 /* Scrollable News Log */
-.news-log {
+/*.news-log {
     max-height: 480px;
     overflow-y: auto;
     padding-right: 8px;
     margin-top: 14px;
+}*/
+#sidebar {
+    position: sticky;
+    top: 30px;
+    align-self: flex-start;
+}
+
+.news-log {
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
 }
 
 .news-log::-webkit-scrollbar {
