@@ -1,164 +1,300 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Abeer AlDayel</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=1180" />
+
+<title>Personal | Abeer Ibraheem Aldayel</title>
+
+<meta name="keywords" content="Abeer Ibraheem Aldayel, Personal, Goodreads, Books" />
+<meta name="description" content="Personal page and Goodreads shelf for Abeer Ibraheem Aldayel." />
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"/>
-<link href="default.css" rel="stylesheet" type="text/css" media="all" />
-<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"/>
+
 <style>
-/* Custom styles for Personal page */
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    background: #ffffff;
+    color: #2b2b2b;
+    line-height: 1.65;
+}
+
+a {
+    color: #8b3a3a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Top banner */
+.hero-banner {
+    max-width: 1180px;
+    height: 150px;
+    margin: 36px auto 26px;
+    padding: 0 32px;
+}
+
+.hero-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    opacity: 0.94;
+}
+
+/* Identity + menu */
+.identity-nav {
+    max-width: 1180px;
+    margin: 0 auto 38px;
+    padding: 0 32px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.identity {
+    flex-shrink: 0;
+}
+
+.identity h1 {
+    margin: 0;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.08;
+    color: #3f3a37;
+    letter-spacing: -0.3px;
+}
+
+.identity .position,
+.identity .email {
+    display: inline-block;
+    margin-top: 7px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.identity .position {
+    margin-right: 12px;
+    color: #6a5550;
+}
+
+.identity .email {
+    color: #8b3a3a;
+}
+
+/* Menu */
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 4px;
+}
+
+.main-nav a {
+    display: block;
+    padding: 10px 11px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #222;
+    text-decoration: none;
+}
+
+.main-nav a:hover,
+.main-nav .active {
+    color: #8b3a3a;
+}
+
+/* Page */
+.page {
+    max-width: 1180px;
+    margin: 0 auto 70px;
+    padding: 0 32px;
+}
+
+.section-signature {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 34px;
+    font-style: italic;
+    font-weight: 300;
+    color: #7a3434;
+    letter-spacing: 0.7px;
+    margin-bottom: 4px;
+    opacity: 0.95;
+}
+
+.page h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 24px;
+    color: #222;
+}
+
+/* Keep Goodreads layout intact, just polished */
 #content-container {
     display: flex;
-    gap: 25px;
-    margin-top: 20px;
+    gap: 34px;
+    align-items: flex-start;
 }
+
 #sidebar {
-    flex: 0 0 270px;
+    flex: 0 0 285px;
+    background: #fafafa;
+    border-left: 5px solid #9b4b45;
+    border-radius: 8px;
+    padding: 24px 22px;
 }
+
+#sidebar h2,
+.blog-widget h2,
+.section-block h2 {
+    font-size: 22px;
+    margin: 0;
+    color: #835c3b;
+}
+
 #sidebar iframe {
     width: 100%;
     border: none;
+    margin-top: 12px;
 }
+
+#gr_footer {
+    text-align: center;
+}
+
 #main-content {
     flex: 1;
 }
-.section-block {
-    margin-bottom: 40px;
-}
+
 .separator {
     border: none;
-    height: 2px;
-    background-color: #ddd;
-    margin: 10px 0 15px 0;
+    height: 1px;
+    background-color: #e3e3e3;
+    margin: 12px 0 18px;
 }
-.gr_grid_container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-.gr_grid_book_container img {
-    width: 98px;
-    height: 160px;
-    border-radius: 4px;
-    transition: transform 0.3s ease;
-}
-.gr_grid_book_container img:hover {
-    transform: scale(1.05);
-}
-.view-more {
-    display: inline-block;
-    margin-top: 10px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #683205;
-}
-#content-container {
-    display: flex;
-    gap: 25px;
-    margin-top: 20px;
-}
-#sidebar {
-    flex: 0 0 270px;
-}
-#sidebar iframe {
-    width: 100%;
-    border: none;
-}
+
 .blog-widget {
-    margin-top: 25px;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 5px;
-    max-height: 250px;  /* limit height */
-    overflow-y: auto;   /* add scrollbar when full */
+    margin-bottom: 34px;
+    background: #fafafa;
+    border-left: 5px solid #9b4b45;
+    padding: 24px 28px;
+    border-radius: 8px;
 }
-.blog-widget h3 {
-    font-size: 16px;
-    margin-bottom: 8px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 5px;
-}
+
 .blog-widget ul {
     list-style: none;
     padding-left: 0;
     margin: 0;
 }
+
 .blog-widget li {
-    font-size: 14px;
-    margin-bottom: 6px;
+    font-size: 17px;
+    margin-bottom: 8px;
 }
+
 .blog-widget a {
-    text-decoration: none;
-    color: #333;
+    color: #8b3a3a;
+    font-weight: 600;
 }
-.blog-widget a:hover {
-    text-decoration: underline;
-}
-#main-content {
-    flex: 1;
-}
+
 .section-block {
+    background: #fafafa;
+    border-left: 5px solid #9b4b45;
+    padding: 24px 28px;
+    border-radius: 8px;
     margin-bottom: 40px;
 }
-.separator {
-    border: none;
-    height: 2px;
-    background-color: #ddd;
-    margin: 10px 0 15px 0;
-}
+
 .gr_grid_container {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
+
 .gr_grid_book_container img {
     width: 98px;
     height: 160px;
     border-radius: 4px;
     transition: transform 0.3s ease;
 }
+
 .gr_grid_book_container img:hover {
     transform: scale(1.05);
 }
+
 .view-more {
     display: inline-block;
-    margin-top: 10px;
-    font-weight: bold;
+    margin-top: 14px;
+    font-weight: 700;
     text-decoration: none;
-    color: #683205;
+    color: #8b3a3a;
+}
+
+/* Footer */
+.footer {
+    border-top: 1px solid #eee;
+    text-align: center;
+    padding: 35px 20px;
+    font-size: 15px;
+    color: #777;
+}
+
+.footer .contact a {
+    margin: 0 10px;
 }
 </style>
 </head>
 
 <body>
-<div id="header" class="container">
-    <div id="logo">
-        <h1><a href="#">Abeer AlDayel</a></h1>
-        <a href="#">aabeer (at) ksu.edu.sa</a>
-    </div>
-    <div id="menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Research.html">Research</a></li>
-            <li><a href="Publications.html">Publications</a></li>
-            <li><a href="FAQ.html">FAQ</a></li>
-            <li><a href="Media.html">Media</a></li>
-            <li><a href="Teaching.html">Teaching/Supervision</a></li>
-            <li class="current_page_item"><a href="Personal.html">Personal</a></li>
-            <li><a href="Contact.html">Contact Me</a></li>
-        </ul>
-    </div>
-</div>
 
-<div id="banner-wrapper"></div>
+<header>
+    <div class="hero-banner">
+        <img src="images/bg01.jpg" alt="Abstract geometric banner">
+    </div>
 
-<div id="page-wrapper">
-    <div id="content-container" class="container">
+    <div class="identity-nav">
+        <div class="identity">
+            <h1>Abeer Ibraheem Aldayel</h1>
+            <span class="position">CCIS, KSU</span>
+            <a class="email" href="mailto:aabeer@ksu.edu.sa">aabeer@ksu.edu.sa</a>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Publications.html">Publications</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="Media.html">Media</a></li>
+                <li><a href="Teaching.html">Teaching/Supervision</a></li>
+                <li><a class="active" href="Personal.html">Personal</a></li>
+                <li><a href="Contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="page">
+
+    <div class="section-signature">Personal</div>
+    <h2>Reading &amp; Personal Notes</h2>
+
+    <div id="content-container">
 
         <!-- Sidebar with Goodreads widget -->
         <div id="sidebar">
@@ -174,18 +310,17 @@
 
         <!-- Main Content -->
         <div id="main-content">
-            
+
             <!-- Blog Section -->
             <div class="blog-widget" id="blog">
-                <h2> Latest Blog Posts</h2>
+                <h2>Latest Blog Posts</h2>
                 <hr class="separator"/>
                 <ul>
                     <li>
-  <a href="blog/BlogPost1.html" target="_blank"
-     style="font-size:1.15rem; font-weight:600;">
-     - In Memory of My Beloved Father (28 July 2025)
-  </a>
-</li>
+                        <a href="blog/BlogPost1.html" target="_blank">
+                            In Memory of My Beloved Father (28 July 2025)
+                        </a>
+                    </li>
                 </ul>
             </div>
 
@@ -198,25 +333,28 @@
                 </div>
                 <a class="view-more" href="https://www.goodreads.com/user/show/68142182-abeer" target="_blank">View all books »</a>
             </div>
+
         </div>
     </div>
-</div>
 
-<!-- Footer -->
-<div id="copyright">
-    <ul class="contact">
-        <li><a href="https://twitter.com/AldayelAbeer" class="icon icon-twitter"><span>Twitter</span></a></li>
-        <li><a href="https://github.com/AbeerAldayel" class="icon icon-github"><span>Github</span></a></li>
-        <li><a href="https://scholar.google.com/citations?user=Ab-6howAAAAJ&hl=en" class="ai ai-google-scholar ai-lg"><span>Google Scholar</span></a></li>
-        <li><a href="mailto:aabeer@ksu.edu.sa" class="icon icon-envelope"><span>Email</span></a></li>
-    </ul>
+</main>
+
+<footer class="footer">
+    <div class="contact">
+        <a href="https://twitter.com/AldayelAbeer" class="icon icon-twitter">Twitter</a>
+        <a href="https://github.com/AbeerAldayel" class="icon icon-github">Github</a>
+        <a href="https://scholar.google.com/citations?user=Ab-6howAAAAJ&hl=en" class="ai ai-google-scholar">Google Scholar</a>
+        <a href="mailto:aabeer@ksu.edu.sa" class="icon icon-envelope">Email</a>
+    </div>
+
     <div align="center">
         <a href='https://freehitcounters.org/'>Counter</a>
         <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=3845917d2a9f38aab07e535244f8d53945620751'></script>
         <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/385649/t/2"></script>
     </div>
-    <p>&copy; All rights reserved. | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
-</div>
+
+    <p>&copy; All rights reserved. Abeer Ibraheem Aldayel.</p>
+</footer>
 
 </body>
 </html>
