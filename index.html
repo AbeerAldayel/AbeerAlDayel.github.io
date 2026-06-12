@@ -14,14 +14,12 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"/>
 
 <style>
-* {
-    box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
     margin: 0;
     font-family: "Source Sans Pro", Arial, sans-serif;
-    background: #ffffff;
+    background: #fff;
     color: #2b2b2b;
     line-height: 1.65;
 }
@@ -31,49 +29,34 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
+a:hover { text-decoration: underline; }
 
-/* Elegant top identity */
+/* Header */
 .site-header {
     max-width: 1180px;
     margin: 0 auto;
-    padding: 46px 32px 24px;
+    padding: 36px 32px 22px;
+    text-align: center;
 }
 
-.identity {
-    text-align: left;
+.logo-img {
+    max-width: 560px;
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto 16px;
 }
 
-.identity h1 {
-    margin: 0;
-    font-size: 48px;
-    line-height: 1.05;
-    font-weight: 700;
-    letter-spacing: -1.4px;
-    color: #111;
-}
-
-.identity .subtitle {
-    margin: 12px 0 6px;
-    font-size: 21px;
-    font-weight: 300;
-    color: #333;
-}
-
-.identity .email {
-    display: inline-block;
-    margin-top: 8px;
+.header-email {
     font-size: 17px;
+    font-weight: 600;
     color: #8b3a3a;
 }
 
-/* Clean menu */
+/* Menu */
 .main-nav {
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
-    margin-top: 25px;
 }
 
 .main-nav ul {
@@ -84,16 +67,12 @@ a:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 6px;
-}
-
-.main-nav li {
-    margin: 0;
+    gap: 4px;
 }
 
 .main-nav a {
     display: block;
-    padding: 17px 18px;
+    padding: 16px 17px;
     font-size: 16px;
     font-weight: 600;
     color: #222;
@@ -104,34 +83,20 @@ a:hover {
     color: #8b3a3a;
 }
 
-/* Banner clearly below menu */
-.hero-banner {
-    max-width: 1180px;
-    height: 155px;
-    margin: 28px auto 70px;
-    background:
-        linear-gradient(rgba(255,255,255,0.35), rgba(255,255,255,0.35)),
-        url("images/banner.jpg");
-    background-size: cover;
-    background-position: center;
-    border-radius: 2px;
-}
-
 /* Main layout */
 .page {
     max-width: 1180px;
-    margin: 30px auto 70px;
+    margin: 38px auto 70px;
     padding: 0 32px;
-}
-  /* display: grid;
-    grid-template-columns: 300px 1fr;
+    display: grid;
+    grid-template-columns: 290px 1fr;
     gap: 60px;
-}*/
+}
 
 .sidebar h2,
 .content h2 {
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 23px;
+    font-weight: 700;
     margin-top: 0;
     color: #222;
 }
@@ -159,7 +124,7 @@ a:hover {
     padding: 8px 6px;
     text-align: center;
     font-size: 13px;
-    border-radius: 2px;
+    border-radius: 3px;
     line-height: 1.25;
 }
 
@@ -168,51 +133,27 @@ a:hover {
 }
 
 .content h2 {
-    font-size: 25px;
+    font-size: 28px;
     margin-bottom: 18px;
 }
 
 .content h3 {
-    font-size: 22px;
+    font-size: 23px;
     margin-top: 34px;
     color: #835c3b;
 }
 
 .note {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
     color: #333;
     background: #faf7f5;
     border-left: 4px solid #9b4b45;
-    padding: 14px 18px;
-    margin: 26px 0;
+    padding: 16px 20px;
+    margin: 28px 0;
+    border-radius: 6px;
 }
 
-.highlight-list {
-    margin-top: 16px;
-}
-
-.highlight-list dt {
-    font-weight: 600;
-    margin-top: 18px;
-}
-
-.highlight-list dt::before {
-    content: "◆ ";
-    color: #b23b35;
-}
-
-.footer {
-    border-top: 1px solid #eee;
-    text-align: center;
-    padding: 35px 20px;
-    font-size: 15px;
-    color: #777;
-}
-
-.footer .contact a {
-    margin: 0 10px;
-}
 .scope-box {
     margin: 32px 0;
     border: 1px solid #eadfda;
@@ -225,7 +166,7 @@ a:hover {
     cursor: pointer;
     padding: 18px 22px;
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 700;
     color: #7a3434;
     list-style: none;
 }
@@ -245,16 +186,25 @@ a:hover {
     content: "–";
 }
 
-.scope-box .scope-content {
+.scope-content {
     padding: 0 22px 22px;
-    font-size: 15.5px;
+    font-size: 15.8px;
     color: #444;
-    line-height: 1.7;
+}
+
+.highlight-list dt {
+    font-weight: 700;
+    margin-top: 18px;
+}
+
+.highlight-list dt::before {
+    content: "◆ ";
+    color: #b23b35;
 }
 
 .phd-card {
     margin-top: 36px;
-    padding: 28px 32px;
+    padding: 30px 34px;
     border-left: 5px solid #9b4b45;
     background: #fafafa;
     border-radius: 8px;
@@ -263,54 +213,60 @@ a:hover {
 .phd-card h3 {
     margin-top: 0;
     color: #222;
-    font-size: 23px;
+    font-size: 24px;
 }
 
 .phd-card p {
     font-size: 17px;
     line-height: 1.75;
 }
-/* Responsive */
+
+.footer {
+    border-top: 1px solid #eee;
+    text-align: center;
+    padding: 35px 20px;
+    font-size: 15px;
+    color: #777;
+}
+
+.footer .contact a {
+    margin: 0 10px;
+}
+
+/* Mobile */
 @media (max-width: 850px) {
-    .identity h1 {
-        font-size: 36px;
+    .site-header {
+        padding: 28px 22px 18px;
     }
 
-    .identity .subtitle {
-        font-size: 18px;
+    .logo-img {
+        width: 95%;
     }
 
     .main-nav ul {
-        justify-content: flex-start;
+        justify-content: center;
+        padding: 0 18px;
     }
 
     .main-nav a {
-        padding: 13px 12px;
+        padding: 12px 10px;
         font-size: 15px;
-    }
-
-    .hero-banner {
-        margin-top: 22px;
-        height: 120px;
     }
 
     .page {
         grid-template-columns: 1fr;
         gap: 35px;
+        margin-top: 30px;
     }
 }
-
 </style>
 </head>
 
 <body>
 
 <header class="site-header">
-    <div class="identity">
-        <h1>Abeer Ibraheem Aldayel</h1>
-        <p class="subtitle">Assistant Professor, College of Computer and Information Sciences, King Saud University </p>
-        <a class="email" href="mailto:aabeer@ksu.edu.sa">aabeer@ksu.edu.sa</a>
-    </div>
+    <img class="logo-img" src="images/abeer-logo.png" alt="Abeer Ibrahim Aldayel - Assistant Professor, College of Computer and Information Sciences, King Saud University">
+    <a class="header-email" href="mailto:aabeer@ksu.edu.sa">aabeer@ksu.edu.sa</a>
 </header>
 
 <nav class="main-nav">
@@ -326,16 +282,14 @@ a:hover {
     </ul>
 </nav>
 
-
-
 <main class="page">
 
     <aside class="sidebar">
 
         <div class="social-links">
-            <a href="mailto:aabeer@ksu.edu.sa" class="icon icon-envelope"> Email</a>
-            <a href="https://sciencemastodon.com/@Aldayelabeer"> Mastodon</a>
-            <a href="https://twitter.com/AldayelAbeer" class="icon icon-twitter"> Twitter</a>
+            <a href="mailto:aabeer@ksu.edu.sa" class="icon icon-envelope">Email</a>
+            <a href="https://sciencemastodon.com/@Aldayelabeer">Mastodon</a>
+            <a href="https://twitter.com/AldayelAbeer" class="icon icon-twitter">Twitter</a>
         </div>
 
         <h2>News Log</h2>
@@ -394,26 +348,26 @@ a:hover {
             I am especially interested in socially aware and fairness-oriented NLP, including benchmark design,
             cross-cultural variation, normative plurality, and responsible AI evaluation.
         </div>
+
         <details class="scope-box">
-    <summary>Research scope and fit</summary>
+            <summary>Research scope and fit</summary>
+            <div class="scope-content">
+                <p>
+                    To help clarify research fit: I am not currently interested in monolingual or
+                    polyglossia/dialect-focused work, including ArabicNLP, ArabicNetwork,
+                    ArabicHCI, Arabic processing, gaming, religious studies, network science,
+                    healthcare/biology, pandemic/COVID-19 applications, educational apps,
+                    applied science applications, political analysis, privacy applications,
+                    policy, sustainability, cybersecurity, or startup-oriented projects.
+                </p>
 
-    <div class="scope-content">
-        <p>
-            To help clarify research fit: I am not currently interested in monolingual or
-            polyglossia/dialect-focused work, including ArabicNLP, ArabicNetwork,
-            ArabicHCI, Arabic processing, gaming, religious studies, network science,
-            healthcare/biology, pandemic/COVID-19 applications, educational apps,
-            applied science applications, political analysis, privacy applications,
-            policy, sustainability, cybersecurity, or startup-oriented projects.
-        </p>
-
-        <p>
-            Please see my <a href="https://abeeraldayel.github.io/FAQ.html">FAQ page</a>
-            and my <a href="https://abeeraldayel.github.io/Publications.html">recent research</a>
-            for a clearer view of my current research direction.
-        </p>
-    </div>
-</details>
+                <p>
+                    Please see my <a href="https://abeeraldayel.github.io/FAQ.html">FAQ page</a>
+                    and my <a href="https://abeeraldayel.github.io/Publications.html">recent research</a>
+                    for a clearer view of my current research direction.
+                </p>
+            </div>
+        </details>
 
         <h3>Highlights of my research so far</h3>
 
@@ -432,44 +386,42 @@ a:hover {
             <a href="https://abeeraldayel.github.io/Publications.html">this page</a>.
         </p>
 
-       
         <div class="phd-card">
-    <h3>Academic background</h3>
+            <h3>Academic background</h3>
 
-    <p>
-        I received my Ph.D. in August 2021 from the University of Edinburgh,
-        where I was affiliated with the
-        <a href="http://web.inf.ed.ac.uk/ilcc">Institute for Language, Cognition and Communication</a>
-        at the School of Informatics, and was a member of the
-        <a href="http://smash.inf.ed.ac.uk/">SMASH research group</a>.
-    </p>
+            <p>
+                I received my Ph.D. in August 2021 from the University of Edinburgh,
+                where I was affiliated with the
+                <a href="http://web.inf.ed.ac.uk/ilcc">Institute for Language, Cognition and Communication</a>
+                at the School of Informatics, and was a member of the
+                <a href="http://smash.inf.ed.ac.uk/">SMASH research group</a>.
+            </p>
 
-    <p>
-        My doctoral work addressed a fundamental challenge in stance detection:
-        how to understand stance in complex, real-world social media environments.
-        The thesis developed computational models that examine the interaction
-        between language, sentiment, and social dynamics, while also motivating
-        more responsible and context-aware NLP evaluation frameworks.
-    </p>
+            <p>
+                My doctoral work addressed a fundamental challenge in stance detection:
+                how to understand stance in complex, real-world social media environments.
+                The thesis developed computational models that examine the interaction
+                between language, sentiment, and social dynamics, while also motivating
+                more responsible and context-aware NLP evaluation frameworks.
+            </p>
 
-    <p>
-        My work has been covered in
-        <a href="https://abeeraldayel.github.io/Media.html">international media</a>
-        for its relevance to social influence and trustworthy AI. Alongside my
-        main research, I also contributed to projects on hybrid language–behavior
-        modeling for suicide risk assessment and rumor veracity detection through
-        conversational modeling.
-    </p>
+            <p>
+                My work has been covered in
+                <a href="https://abeeraldayel.github.io/Media.html">international media</a>
+                for its relevance to social influence and trustworthy AI. Alongside my
+                main research, I also contributed to projects on hybrid language–behavior
+                modeling for suicide risk assessment and rumor veracity detection through
+                conversational modeling.
+            </p>
 
-    <p>
-        Before my Ph.D., I earned both my BSc and MSc in Computer and Information
-        Sciences from King Saud University. My master’s thesis focused on query
-        paraphrasing for information retrieval, and I also worked as a research
-        assistant on readability identification.
-    </p>
-</div>
+            <p>
+                Before my Ph.D., I earned both my BSc and MSc in Computer and Information
+                Sciences from King Saud University. My master’s thesis focused on query
+                paraphrasing for information retrieval, and I also worked as a research
+                assistant on readability identification.
+            </p>
+        </div>
 
-       
         <p>
             📚 My personal interests include learning different languages and reading.
             Recommend me a book for my reading list <a href="https://abeeraldayel.github.io/Personal.html">here</a>.
