@@ -1,88 +1,238 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Abeer AlDayel</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=1180" />
+
+<title>In Memory of My Beloved Father | Abeer Ibraheem Aldayel</title>
+
+<meta name="keywords" content="Abeer Ibraheem Aldayel, Blog, Personal Notes" />
+<meta name="description" content="In Memory of My Beloved Father, a personal blog post by Abeer Ibraheem Aldayel." />
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"/>
-<link href="../default.css" rel="stylesheet" type="text/css" media="all" />
-<link href="../fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"/>
 
-<style type="text/css">
+<style>
+* { box-sizing: border-box; }
 
-#content-container {
+body {
+    margin: 0;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    background: #ffffff;
+    color: #2b2b2b;
+    line-height: 1.65;
+}
+
+a {
+    color: #8b3a3a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Banner */
+.hero-banner {
+    max-width: 1180px;
+    height: 150px;
+    margin: 36px auto 26px;
+    padding: 0 32px;
+}
+
+.hero-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
-    margin-top: 20px;
+    border-radius: 8px;
+    opacity: 0.94;
 }
 
-/* hide the old sidebar box completely */
-#sidebar {
-    display: none;
+/* Identity + menu */
+.identity-nav {
+    max-width: 1180px;
+    margin: 0 auto 38px;
+    padding: 0 32px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+    border-bottom: 1px solid #eeeeee;
 }
 
-/* Horizontal blog strip */
+.identity {
+    flex-shrink: 0;
+}
+
+.identity h1 {
+    margin: 0;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.08;
+    color: #3f3a37;
+    letter-spacing: -0.3px;
+}
+
+.identity .position,
+.identity .email {
+    display: inline-block;
+    margin-top: 7px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.identity .position {
+    margin-right: 12px;
+    color: #6a5550;
+}
+
+.identity .email {
+    color: #8b3a3a;
+}
+
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 4px;
+}
+
+.main-nav a {
+    display: block;
+    padding: 10px 11px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #222;
+    text-decoration: none;
+}
+
+.main-nav a:hover,
+.main-nav .active {
+    color: #8b3a3a;
+}
+
+/* Page */
+.page {
+    max-width: 1180px;
+    margin: 0 auto 70px;
+    padding: 0 32px;
+}
+
+.section-signature {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 34px;
+    font-style: italic;
+    font-weight: 300;
+    color: #7a3434;
+    letter-spacing: 0.7px;
+    margin-bottom: 4px;
+    opacity: 0.95;
+}
+
+.page h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 26px;
+    color: #222;
+}
+
+/* Blog strip */
 .blog-strip {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    background: #fafafa;
+    border-left: 5px solid #9b4b45;
+    padding: 22px 26px;
+    border-radius: 8px;
 }
 
 .blog-strip h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 6px;
+    margin: 0 0 14px;
+    font-size: 21px;
+    color: #835c3b;
 }
 
 .blog-strip-scroll {
     display: flex;
     gap: 12px;
     overflow-x: auto;
-    padding: 10px;
-    border: 1px solid #ddd;
-    background: #f9f9f9;
-    border-radius: 6px;
+    padding-bottom: 4px;
 }
 
 .blog-strip-item {
     flex: 0 0 auto;
     background: #ffffff;
-    border: 1px solid #ddd;
+    border: 1px solid #eadfda;
     padding: 10px 14px;
     border-radius: 6px;
-    font-size: 14px;
-    text-decoration: none;
-    color: #333;
+    font-size: 15px;
+    font-weight: 600;
+    color: #7a3434;
     white-space: nowrap;
 }
 
 .blog-strip-item:hover {
-    background: #eee;
+    background: #fffaf8;
 }
 
-#main-content {
-    width: 100%;
+/* Blog article */
+.post-card {
+    background: #ffffff;
+    border-left: 5px solid #9b4b45;
+    border-radius: 8px;
+    padding: 36px 42px;
+    box-shadow: 0 0 0 1px #f0eeee;
 }
 
 .post-title {
-    font-size: 28px;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 38px;
     font-weight: 600;
+    line-height: 1.18;
+    color: #3f3a37;
     margin-bottom: 10px;
 }
 
 .post-meta {
-    font-size: 13px;
+    font-size: 15px;
     color: #777;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .post-body {
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 18px;
+    line-height: 1.78;
+    max-width: 890px;
 }
 
-/* video sizing */
+.post-body p {
+    margin: 0 0 22px;
+}
+
+.post-body blockquote {
+    margin: 28px 0;
+    padding: 20px 24px;
+    background: #fffaf8;
+    border-left: 4px solid #c9a37a;
+    color: #555;
+    font-size: 17px;
+    line-height: 1.75;
+    border-radius: 6px;
+}
+
+.post-body hr {
+    border: none;
+    border-top: 1px solid #eeeeee;
+    margin: 36px 0;
+}
+
+/* Video */
 .memory-video {
     margin-top: 40px;
     text-align: center;
@@ -90,195 +240,70 @@
 
 .memory-video video {
     width: 100%;
-    max-width: 560px;
+    max-width: 620px;
     height: auto;
-    border-radius: 6px;
+    border-radius: 8px;
 }
 
 .video-caption {
-    font-size: 14px;
+    font-size: 15px;
     color: #666;
-    margin-top: 10px;
+    margin-top: 12px;
     font-style: italic;
-    max-width: 560px;
+    max-width: 620px;
     margin-left: auto;
     margin-right: auto;
 }
-/* ====== MOBILE FIX OVERRIDES (place at very end) ====== */
 
-/* Always allow vertical scrolling on mobile */
-html, body {
-  height: auto !important;
-  overflow-y: auto !important;
-  overflow-x: hidden !important;
-  -webkit-overflow-scrolling: touch;
+/* Footer */
+.footer {
+    border-top: 1px solid #eee;
+    text-align: center;
+    padding: 35px 20px;
+    font-size: 15px;
+    color: #777;
 }
 
-/* Kill the template fixed-width + overflow clipping */
-.container {
-  width: 100% !important;
-  max-width: 980px !important;
-  overflow: visible !important;
-  padding-left: 14px !important;
-  padding-right: 14px !important;
-  box-sizing: border-box !important;
+.footer .contact a {
+    margin: 0 10px;
 }
-
-/* Banner + wrappers must not clip/lock scrolling */
-#banner-wrapper,
-#page-wrapper {
-  overflow: visible !important;
-  padding: 2em 0em !important; /* less empty space on mobile */
-}
-
-/* Stop flex sidebar layout on mobile */
-#content-container {
-  display: block !important;
-}
-
-/* If any sidebar remains, hide it */
-#sidebar,
-#sidebar-nav {
-  display: none !important;
-}
-
-/* Header: remove absolute positioning on mobile to avoid overlap */
-@media only screen and (max-width: 760px) {
-
-  #header {
-    position: relative !important;
-    padding: 1.2em 0em !important;
-    zoom: 100% !important;     /* cancel zoom */
-    overflow: visible !important;
-  }
-
-  #logo {
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    text-align: left !important;
-    margin-bottom: 10px !important;
-  }
-
-  #menu {
-    position: relative !important;
-    top: auto !important;
-    right: auto !important;
-    width: 100% !important;
-  }
-
-  #menu ul {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    gap: 6px 10px !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  #menu li {
-    float: none !important;
-  }
-
-  #menu li a {
-    padding: 6px 8px !important;
-    font-size: 13px !important;
-  }
-}
-
-/* Slightly larger phones/tablets */
-@media only screen and (max-width: 959px) {
-  body { overflow: auto !important; }  /* override your overflow:hidden */
-  #header { zoom: 100% !important; }   /* cancel zoom */
-  #footer-wrapper { zoom: 100% !important; }
-}
-
-/* Make text readable */
-.post-title {
-  line-height: 1.2 !important;
-}
-
-.post-body, .post-body p, blockquote {
-  overflow-wrap: break-word;
-  word-break: break-word;
-}
-/* ===== Desktop only (PC) header fix ===== */
-@media screen and (min-width: 961px){
-
-  /* Header becomes flex so menu never overlaps logo */
-  #header.container{
-    display:flex !important;
-    align-items:flex-start !important;
-    justify-content:space-between !important;
-    gap:16px !important;
-    flex-wrap:nowrap !important;
-  }
-
-  #logo{
-    flex:0 0 auto !important;
-    max-width:360px !important;
-    position:relative !important;
-    z-index:2 !important;
-  }
-
-  #menu{
-    flex:1 1 auto !important;
-    position:relative !important;
-    top:auto !important;
-    right:auto !important;
-    display:flex !important;
-    justify-content:flex-end !important;
-    z-index:3 !important;
-  }
-
-  /* Remove template floats (this is usually the cause of the overlap) */
-  #menu ul{
-    display:flex !important;
-    justify-content:flex-end !important;
-    gap:10px 18px !important;
-    margin:0 !important;
-    padding:0 !important;
-  }
-
-  #menu li{ float:none !important; }
-
-  #menu li a{
-    padding:6px 8px !important;
-    font-size:14px !important;
-    line-height:1.2 !important;
-    white-space:nowrap !important; /* keeps each item on one line */
-  }
-}
-
-
 </style>
 </head>
 
 <body>
-<div id="header" class="container">
-    <div id="logo">
-        <h1><a href="index.html">Abeer AlDayel</a></h1>
-        <a href="#">aabeer (at) ksu.edu.sa</a>
+
+<header>
+    <div class="hero-banner">
+        <img src="../images/bg01.jpg" alt="Abstract geometric banner">
     </div>
-    <div id="menu">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../Research.html">Research</a></li>
-            <li><a href="../Publications.html">Publications</a></li>
-            <li><a href="../FAQ.html">FAQ</a></li>
-            <li><a href="../Media.html">Media</a></li>
-            <li><a href="../Teaching.html">Teaching|Supervision</a></li>
-            <li><a href="../Personal.html">Personal</a></li>
-            <li><a href="../Contact.html">Contact Me</a></li>
-        </ul>
+
+    <div class="identity-nav">
+        <div class="identity">
+            <h1>Abeer Ibraheem Aldayel</h1>
+            <span class="position">CCIS, KSU</span>
+            <a class="email" href="mailto:aabeer@ksu.edu.sa">aabeer@ksu.edu.sa</a>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Research.html">Research</a></li>
+                <li><a href="../Publications.html">Publications</a></li>
+                <li><a href="../FAQ.html">FAQ</a></li>
+                <li><a href="../Media.html">Media</a></li>
+                <li><a href="../Teaching.html">Teaching/Supervision</a></li>
+                <li><a class="active" href="../Personal.html">Personal</a></li>
+                <li><a href="../Contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
     </div>
-</div>
+</header>
 
-<div id="banner-wrapper"></div>
+<main class="page">
 
-<div id="page-wrapper">
-   <div id="content-container" class="container">
+    <div class="section-signature">Personal Notes</div>
+    <h2>Blog</h2>
 
-    <!-- Horizontal Blog Navigation -->
     <div class="blog-strip">
         <h3>🖊️ Other Blog Posts</h3>
 
@@ -289,9 +314,9 @@ html, body {
             <!-- add more posts here -->
         </div>
     </div>
-<div id="fbox33">
-    <!-- Main Blog Content -->
-    <div id="main-content">
+
+    <article class="post-card">
+
         <div class="post-title">In Memory of My Beloved Father (28 July 2025)</div>
         <div class="post-meta">Written on 12 Dec 2025, Abeer Ibraheem Aldayel</div>
 
@@ -366,30 +391,26 @@ He used to say:
             </div>
 
         </div>
+    </article>
+
+</main>
+
+<footer class="footer">
+    <div class="contact">
+        <a href="https://twitter.com/AldayelAbeer" class="icon icon-twitter">Twitter</a>
+        <a href="https://github.com/AbeerAldayel" class="icon icon-github">Github</a>
+        <a href="https://scholar.google.com/citations?user=Ab-6howAAAAJ&hl=en" class="ai ai-google-scholar">Google Scholar</a>
+        <a href="mailto:aabeer@ksu.edu.sa" class="icon icon-envelope">Email</a>
     </div>
 
-</div>
-
-   </div> 
-   
-
-
-<!-- Footer -->
-<!-- Footer -->
-<div id="copyright">
-    <ul class="contact">
-        <li><a href="https://twitter.com/AldayelAbeer" class="icon icon-twitter"><span>Twitter</span></a></li>
-        <li><a href="https://github.com/AbeerAldayel" class="icon icon-github"><span>Github</span></a></li>
-        <li><a href="https://scholar.google.com/citations?user=Ab-6howAAAAJ&hl=en" class="ai ai-google-scholar ai-lg"><span>Google Scholar</span></a></li>
-        <li><a href="mailto:aabeer@ksu.edu.sa" class="icon icon-envelope"><span>Email</span></a></li>
-    </ul>
     <div align="center">
         <a href='https://freehitcounters.org/'>Counter</a>
         <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=3845917d2a9f38aab07e535244f8d53945620751'></script>
         <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/385649/t/2"></script>
     </div>
-    <p>&copy; All rights reserved. | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
-</div>
+
+    <p>&copy; All rights reserved. Abeer Ibraheem Aldayel.</p>
+</footer>
 
 </body>
 </html>
