@@ -1,302 +1,391 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!--
-Design by TEMPLATED
-http://templated.co
-Released for free under the Creative Commons Attribution License
-
-Name       : Saleable 
-Description: A two-column, fixed-width design with dark color scheme.
-Version    : 1.0
-Released   : 20131118
-
--->
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Abeer AlDayel</title>
-<meta name="keywords" content="NLP, Computational Social Science, Natural Language Processing" />
-<meta name="description" content="" />
-<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"/>
-<link href="default.css" rel="stylesheet" type="text/css" media="all" />
-<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"  />
-<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
+<title>Abeer Ibrahim Aldayel</title>
+
+<meta name="keywords" content="NLP, Computational Social Science, Responsible AI, Natural Language Processing" />
+<meta name="description" content="Abeer Ibrahim Aldayel - Assistant Professor, NLP, Computational Social Science, Responsible AI" />
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"/>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    background: #ffffff;
+    color: #2b2b2b;
+    line-height: 1.65;
+}
+
+a {
+    color: #8b3a3a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Elegant top identity */
+.site-header {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 46px 32px 24px;
+}
+
+.identity {
+    text-align: left;
+}
+
+.identity h1 {
+    margin: 0;
+    font-size: 48px;
+    line-height: 1.05;
+    font-weight: 700;
+    letter-spacing: -1.4px;
+    color: #111;
+}
+
+.identity .subtitle {
+    margin: 12px 0 6px;
+    font-size: 21px;
+    font-weight: 300;
+    color: #333;
+}
+
+.identity .email {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 17px;
+    color: #8b3a3a;
+}
+
+/* Clean menu */
+.main-nav {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-top: 30px;
+}
+
+.main-nav ul {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 32px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.main-nav li {
+    margin: 0;
+}
+
+.main-nav a {
+    display: block;
+    padding: 17px 18px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    color: #8b3a3a;
+}
+
+/* Banner clearly below menu */
+.hero-banner {
+    max-width: 1180px;
+    height: 155px;
+    margin: 28px auto 70px;
+    background:
+        linear-gradient(rgba(255,255,255,0.35), rgba(255,255,255,0.35)),
+        url("images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 2px;
+}
+
+/* Main layout */
+.page {
+    max-width: 1180px;
+    margin: 0 auto 70px;
+    padding: 0 32px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 60px;
+}
+
+.sidebar h2,
+.content h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 0;
+    color: #222;
+}
+
+.social-links {
+    margin-bottom: 34px;
+    font-size: 16px;
+}
+
+.social-links a {
+    margin-right: 14px;
+}
+
+.news-item {
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    gap: 14px;
+    margin-bottom: 18px;
+    font-size: 15px;
+}
+
+.news-date {
+    background: #9b4b45;
+    color: #fff;
+    padding: 8px 6px;
+    text-align: center;
+    font-size: 13px;
+    border-radius: 2px;
+    line-height: 1.25;
+}
+
+.content {
+    font-size: 18px;
+}
+
+.content h2 {
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+.content h3 {
+    font-size: 22px;
+    margin-top: 34px;
+    color: #835c3b;
+}
+
+.note {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    background: #faf7f5;
+    border-left: 4px solid #9b4b45;
+    padding: 14px 18px;
+    margin: 26px 0;
+}
+
+.highlight-list {
+    margin-top: 16px;
+}
+
+.highlight-list dt {
+    font-weight: 600;
+    margin-top: 18px;
+}
+
+.highlight-list dt::before {
+    content: "◆ ";
+    color: #b23b35;
+}
+
+.footer {
+    border-top: 1px solid #eee;
+    text-align: center;
+    padding: 35px 20px;
+    font-size: 15px;
+    color: #777;
+}
+
+.footer .contact a {
+    margin: 0 10px;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+    .identity h1 {
+        font-size: 36px;
+    }
+
+    .identity .subtitle {
+        font-size: 18px;
+    }
+
+    .main-nav ul {
+        justify-content: flex-start;
+    }
+
+    .main-nav a {
+        padding: 13px 12px;
+        font-size: 15px;
+    }
+
+    .hero-banner {
+        margin-top: 22px;
+        height: 120px;
+    }
+
+    .page {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+}
+</style>
 </head>
+
 <body>
-<div id="header" class="container">
-	<div id="logo">
 
-    <h1>Abeer Ibrahim Aldayel</h1>
-    <p>Assistant Professor | NLP • Computational Social Science • Responsible AI</p>
-    <a href="mailto:aabeer@ksu.edu.sa">aabeer@ksu.edu.sa</a>
-</div>
-
-<nav id="menu">
-
-		
-		<ul>
-			<li><a href="index.html" accesskey="1" title="">Home</a></li>
-			<li><a href="Research.html" accesskey="2" title="">Research</a></li>
-			<li><a href="Publications.html" accesskey="3" title="">Publications</a></li>
-                        <li><a href="FAQ.html" accesskey="4" title="">FAQ</a></li>
-                        <li><a href="Media.html" accesskey="5" title="">Media</a></li>
-			<li><a href="Teaching.html" accesskey="6" title="">Teaching/Supervision</a></li>
-                        <li><a href="Personal.html" accesskey="7" title="">Personal</a></li>    
-			<li><a href="Contact.html" accesskey="8" title="">Contact Me</a></li>
-		</ul>
-	
-</nav>
-<div id="banner-wrapper">
-</div>
-<div id="page-wrapper">
-
-<div id="footer-wrapper">
-    
-	<div id="footer" class="container" >
-            
-             <p> 
-                   <a href="mailto:aabeer@ksu.edu.sa" class="icon icon-envelope"><span> Email &nbsp;&nbsp;</span></a>
-                   <a href="https://sciencemastodon.com/@Aldayelabeer" <i class="fa fa-mastodon" aria-hidden="true"><span>Mastodon &nbsp;&nbsp;</span></a>
-                     <a href="https://twitter.com/AldayelAbeer" class="icon icon-twitter"><span>Twitter</span></a>
-			</p>
-		<div id="fbox1" class="compact_box" >
-                  
-			  <h2>News Log</h2>
-                          
-                              <ul class="style3">
-                                  <li class="first">
-                                 <p class="date"><a href="#"><b>5-11-2025</b> </a></p>
-                                 <p> Gave a talk "Beyond Accuracy: Robust Representations for Social Norms Alignment in Human–AI Modeling", @KSU-CCIS Research talk.
- </a> </p>
-                                  </li><!-- comment -->
-                                  
-                                  <li class="first">
-                                 <p class="date"><a href="#"><b>26-10-2025</b> </a></p>
-                                 <p> Paper accepted to appear @ AACL2025-Findings <a href="https://arxiv.org/abs/2507.20264"> EMBRACE: Shaping Inclusive Opinion Representation by Aligning Implicit Conversations with Social Norms
-Abeer Aldayel, Areej Alokaili, The 14th IJCNLP & 4th AACL 2025.
- </a> </p>
-                                  </li><!-- comment -->
-                                  
-                                  <li class="first">
-                                 <p class="date"><a href="#"><b>12-09-2025</b> </a></p>
-                                 <p> New pre-print <a href="https://arxiv.org/abs/2509.10184?ref=lowintech.com"> Incongruent Positivity: When Miscalibrated Positivity Undermines Online Supportive Conversations, Leen Almajed, Abeer ALdayel </a> </p>
-                                 </li>
-                                  
-                                   <li class="first">
-                                 <p class="date"><a href="#"><b>27-07-2025</b> </a></p>
-                                 <p> New pre-print <a href="https://arxiv.org/abs/2507.20264"> EMBRACE: Shaping Inclusive Opinion Representation by Aligning Implicit Conversations with Social Norms, Abeer Aldayel, Areej Alokaili </a> </p>
-                                 </li>
-                                   <li class="first">
-                                 <p class="date"><a href="#"><b>26-06-2025</b> </a></p>
-                                 <p>  <a href=""> Best senior program chair recognition. ICWSM,AAAI 2026 </a> </p>
-                                 </li>
-                                  
-                                  <li class="first">
-                                 <p class="date"><a href="#"><b>29-05-2025</b> </a></p>
-                                 <p>  <a href=""> CultureLens: Assessing Socio-Cultural Values in Multilingual Models, the 12th Undergraduate Research & Innovation Competition (URIC),Abu Dhabi University  </a> </p>
-                                 </li>
-                                  
-                                  <li class="first">
-                                 <p class="date"><a href="#"><b>16-11-2024</b> </a></p>
-                                 <p>  <a href=""> Outstanding Reviewer,EMNLP,2024 </a> </p>
-                                 </li>
-                                    <li class="first">
-                                 <p class="date"><a href="#"><b>11-09-2024</b> </a></p>
-                                 <p> Paper accepted to appear @ NLP4PI, EMNLP2024, <a href="https://arxiv.org/abs/2408.08212v2"> Covert Bias: The Severity of Social Views’ Unalignment in Language Models Towards Implicit and Explicit Opinion,Abeer Aldayel, Areej Alokaili, Rehab Alahmadi</a> </p>
-                                 </li>
-                                  
-                                   <li class="first">
-                                 <p class="date"><a href="#"><b>15-08-2024</b> </a></p>
-                                 <p> New pre-print! Covert Bias: The Severity of Social Views’ Unalignment in Language Models Towards Implicit and Explicit Opinion, (Abeer Aldayel, Areej Alokaili, Rehab Alahmadi), under-review, preprint<a href="https://arxiv.org/abs/2408.08212v2">(link)</a></p>
-                                 </li>
-                                
-                                   <li class="first">
-                                 <p class="date"><a href="#"><b>16-07-2024</b> </a></p>
-                                 <p> Paper accepted to appear @ ICWSM, Hatred Stems from Ignorance! Distillation of the Persuasion Modes in Countering Conversational Hate Speech, (Ghadi Alyahya, Abeer Aldayel), ICWSM2025, preprint<a href="https://arxiv.org/pdf/2403.15449v3">(link)</a></p>
-                                 </li>
-                                  <li class="first">
-                                 <p class="date"><a href="#"><b>24-04-2024</b> </a></p>
-                                        <p> Gave a talk @ Saudi Digital Academy for Data Science, "Efficacy of Social Aspect and Human-Centered Paradigm From Real-World Scenarios to LLM", <a href="https://sda.edu.sa/bootcamp"> SDA academy  </a> </p>
-                                 </li>
-                                  <li class="first">
-                                 <p class="date"><a href="#"><b>17-03-2024</b> </a></p>
-                                        <p> New pre-print! Hatred Stems from Ignorance! Distillation of the Persuasion Modes in Countering Conversational Hate Speech.(under-review), (Ghadi Alyahya, Abeer Aldayel), preprint(<a href="https://arxiv.org/abs/2403.15449">link)</a> </p>
-                                 </li>
-                                        <li class="first">
-					<p class="date"><a href="#"><b>05-06-2023</b> </a></p>
-                                        <p>  Co-organized the Data Challenge,ICWSM, <a href="https://sites.google.com/view/icwsm2023datachallenge/home"> Temporal Data  </a> </p>
-				</li>
-                                 
-                                   <li class="first">
-					<p class="date"><a href="#"><b>29-05-2023</b> </a></p>
-                                        <p>  Gave a talk @ SDAIA Academy, Computational Social Science For NLP: Closer Look at Reliability through Feedback & Human-Centered Values, arranged by <a href="https://thakaa.edu.sa/en/">AI Center of Advanced Studies Thakaa  </a> </p>
-				</li>
-                                   <li class="first">
-					<p class="date"><a href="#"><b>09-05-2023</b> </a></p>
-                                       <a href="https://arxiv.org/abs/2305.10433"> <p>  Paper accepted @NEATCLASS ICWSM, Toxicity Inspector: A Framework to Evaluate Ground Truth in Toxicity Detection Through Feedback   </p> </a>
-				</li>
-                                  <li class="first">
-					<p class="date"><a href="#"><b>27-11-2022</b> </a></p>
-                                        <a href="https://twitter.com/AldayelAbeer/status/1596863876087545856"> <p> Our graduation project team selected for digital innovation award "Toxicity inspector: Multilingual toxic comments mitigation through feedback"  </p> </a>
-				</li>
-                            <li class="first">
-					<p class="date"><a href="#"><b>8-2-2022</b> </a></p>
-                                        <p> Our paper "Characterizing the role of bots’ in polarized stance on social media" got accepted at SNAM </p>
-				</li>
-                            <li class="first">
-					<p class="date"><a href="#"><b>29-10-2021</b> </a></p>
-                                        <p> Gave a talk @women_in_nlp "Social computing through the lens of NLP: a closer look at opportunities, reliability and beyond"</p>
-				</li>
-                             <li class="first">
-					<p class="date"><a href="#"><b>1-9-2021</b> </a></p>
-                                        <p> Starting new position as assistant professor at King Saud University</p>
-				</li>
-                            
-                            <li class="first">
-					<p class="date"><a href="#"><b>10-6-2021</b> </a></p>
-                                        <p> Received the Best Reviewer Award in ICWSM 2021 </p>
-				</li>
- <li class="first">
-					<p class="date"><a href="#"><b>25-5-2021</b> </a></p>
-                                        <p> Passed my PhD viva , starting my job @ KSU as assistant professor soon  </p>
-				</li>
-                                <li class="first">
-					<p class="date"><a href="#"><b>20-3-2021</b> </a></p>
-                                        <p> Our paper "Stance detection on social media: state-of-the-art and trends" got accepted at IP&M </p>
-				</li>
-
-                             <li class="first">
-					<p class="date"><a href="#"><b>20-7-2020</b> </a></p>
-                                        <p> Presented recent work on stance polarization on social media at IC2S2-2020. </p>
-				</li>
-                            <li class="first">
-					<p class="date"><a href="#"><b>11-6-2020</b> </a></p>
-                                        <p> Received the Best Reviewer Award in ICWSM 2020. </p>
-				</li>
-                            <li class="first">
-					<p class="date"><a href="#"><b>8-6-2020</b> </a></p>
-                                        <p> Our tutorial "Detection and Characterization of Stance on Social Media" Accepted @ICWSM 2020  </p>
-				</li>
-                                                    
-                            
-                            <li class="first">
-					<p class="date"><a href="#"><b>30-7-2019</b> </a></p>
-                                        <p> Our paper <a href="https://abeeraldayel.github.io/" rel="nofollow">   "Your Stance is Exposed! Analysing Possible Factors for Stance Detection on Social Media" Accepted @CSCW 2019  </a> </p>
-				</li>
-                            <li class="first">
-					<p class="date"><a href="#"><b>1-7-2019</b> </a></p>
-                                        <p> Our paper <a href="https://abeeraldayel.github.io/" rel="nofollow">   "Assessing Sentiment of the Expressed Stance on Social Media" Accepted @SocInfo2019  </a> </p>
-				</li>
-                            
-                            <li class="first">
-					<p class="date"><a href="#"><b>17-4-2019</b> </a></p>
-                                        <p> IC2S2 submission has been accepted, <a href="https://www.research.ed.ac.uk/portal/en/publications/it-is-more-than-what-you-say(954161ea-616a-4310-953f-6be5d0a67208).html" rel="nofollow">  It is more than what you Say! Leveraging User Online Activity for Improved Stance Detection </a> </p>
-				</li>
-                            <li class="first">
-					<p class="date"><a href="#"><b>17-4-2019</b> </a></p>
-					<p> Our paper "Similar Minds Post Alike: Assessment of Suicide Risk by Hybrid Language and Behavioral Model" Accepted @CLPsych2019
-					</p>
-				</li>
-                            
-				<li class="first">
-					<p class="date"><a href="#"><b>8-5-2018</b> </a></p>
-					<p>Our paper  <a href="http://lrec-conf.org/workshops/lrec2018/W30/pdf/book_of_proceedings.pdf#page=24" rel="nofollow"> "ARC-WMI" Accepted @OSACT3</a>
-					</p>
-				</li>
-				
-				<li>
-				   
-				</li>
-                            
-                            <li>
-					<p class="date"><a href="#"><b>27-2-2018</b> </a></p>
-					<p>Our paper <a href="https://bmchealthservres.biomedcentral.com/articles/10.1186/s12913-018-2944-x" rel="nofollow">  "Readability of WMIs" published @ BMC health services research Journal</a>
-					</p>
-				</li>
-			</ul>
-                           <ul class="contact" >
-		<li><a href="https://twitter.com/AldayelAbeer" class="icon icon-twitter"><span>Twitter</span></a></li>
-                <!--<li> <i class="fa fa-mastodon" aria-hidden="true"></i>-->
-                <li> <a href="https://sciencemastodon.com/@Aldayelabeer" <i class="fa fa-mastodon" aria-hidden="true"><span>mastodon</span></a></li>
-                <li><a href="https://github.com/AbeerAldayel" class="icon icon-github"><span>Github</span></a></li>
-                <!--<li><a href="https://github.com/AbeerAldayel" class="ai ai-Github-square ai-3x"><span>Github</span></a></li>-->
-                <!--<li><a href="https://scholar.google.com/citations?user=Ab-6howAAAAJ&hl=en" class="icon icon-search"><span>Google Scholar</span></a></li>-->
-                <!-- ai-3x -->
-                <li><a href="https://scholar.google.com/citations?user=Ab-6howAAAAJ&hl=en" class="ai ai-google-scholar ai-lg"><span>Google Scholar</span></a></li>
-                <!--<li><a href="mailto:a.aldayel@ed.ac.uk" class="ai ai-envelope-square ai-3x"><span>Email</span></a></li> -->
-		<li><a href="mailto:aabeer@ksu.edu.sa" class="icon icon-envelope"><span>Email</span></a></li>
-		
-	</ul> 
-		</div>
-           
-		<div id="fbox2">
-			
-
-			 <font size="4"> <p align="justify">
-                                  <font size="5" style="color:black;"> <p> - About me and my research interest: </p> </font>
-                                  <p align="justify"> I am an Assistant Professor at the College of Computer and Information Sciences, King Saud University. My research lies at the intersection of <strong> Computational Social Science, Natural Language Processing (NLP), and Responsible AI</strong>, where I develop computational methods to evaluate the social and normative dimensions of language.
-
-My work focuses on multilingual and socially grounded language processing, with particular emphasis on modeling and evaluating language use across diverse social and cultural contexts. I study phenomena such as bias, abusive and harmful language, misinformation, and implicit social meanings. A core goal of my research is to move beyond surface-level language analysis toward representing implicit values and dynamics embedded in language, in support of more responsible and socially aligned AI systems.
-
-I am especially interested in socially aware and fairness-oriented NLP, including the design of benchmarks and evaluation frameworks that reflect cross-cultural variation and normative plurality. My research contributes to Responsible AI by advancing methods for transparency, robustness, and cultural alignment in language modeling.
-
-
-</p> </font>
-                                
-                                
-                                  <p> <font size="3" sfyle="color:red;" > <strong> [I am not interested in monolingual or polyglossia/dialects, aka. ArabicNLP/ArabicNetwork/ArabicHCI/Arabic Processing! or Gaming! Religious studies/ Network Science/ Healthcare-Biology or Pandemic(Covid19)! apps/Educational apps/ Applied Science or Applications/political analysis/ privacy applications/ policy / Sustainability/ Cybersecurity / Startups! please check <a href="https://abeeraldayel.github.io/FAQ.html">FAQ page  </a>
- and my most<a href="https://abeeraldayel.github.io/Publications.html"> recent research </a>!] </strong>	 
-                               </font></p>
-
-                     <font size="5" style="color:#835C3B"> <p> <strong> - Highlights of my research so far </strong>: </p>  </font>
-                     <font size="4"><dl>
-                             <dt><p class="tab">&#9830; Computational Social Science and Natural Language Processing </p></dt>
-                             <dd>  <p class="tab">  Social Bias (social views and cultural aspect alignment [Multilingual]), Hate speech (reliability evaluation, counter-speech), Stance detection, Suicide level assessment. </p> </dd>
-                             <dt> <p class="tab">&#9830;  Natural Language Processing </p></dt>
-                             <dd> <p class="tab">Cross-lingual paraphrasing techniques, Readability assessment, Rumours veracity detection.</p></dd>
-</dl> </font>
-                      <font size="5">  <p> - More about my most recent research at <a href="https://abeeraldayel.github.io/Publications.html"> this page. </a> </p> </font>
-                    
-                           
-                      <font size="4"> <p align="justify" > I got my Ph.D. in (August 2021) from the University of Edinburgh, <a href="http://web.inf.ed.ac.uk/ilcc" rel="nofollow"> the Institute for Language, Cognition and Communication (ILCC) at School of Informatics</a> 
-                              , as a member of <a href="http://smash.inf.ed.ac.uk/">(SMASH) research group</a>.
-                              My thesis addresses a fundamental challenge in stance detection model focusing on understanding stance in complex, real-world social media environments. My research develops models that evaluate the integration of language, sentiment, and social dynamics, and introduces responsible NLP frameworks. 
-                              My work has been covered in <a href="https://abeeraldayel.github.io/Media.html"> international media</a> highlighting its impact on social influence, and trustworthy AI.
-                              In addition, I worked on side projects including a hybrid language–behavior model for suicide risk assessment (CLPsych Workshop at NAACL 2019) and rumor veracity detection through conversational modeling. 
-                              Overall, my work emphasizes context, social dynamics, and responsible measures as key pillars for building impactful and trustworthy NLP models.
-                             
-                 <font size="4"> <p align="justify" > Before starting my PhD, I earned a BSc and MSc in Computer and Information Sciences from King Saud University (KSU). In my Master thesis, I worked on developing query paraphrasing algorithm to enhance  information retrieval system. Beside my job as lecturer at (KSU), 
-I worked as a research assistant in a readability identification project to predict the readability level of a given text. </p>
-                             <p>  📚 My personal interests include learning different languages, and reading [recommend me a book for my reading list <a href="https://abeeraldayel.github.io/Personal.html"> here </a>:) ]📚</p>
-                           
-                   </font> 
-                  
-                     
-		</div>
-	</div>
-</div>
-<div id="copyright">
-	 <ul class="contact" >
-		<li><a href="https://twitter.com/AldayelAbeer" class="icon icon-twitter"><span>Twitter</span></a></li>
-               <li><a href="https://sciencemastodon.com/@Aldayelabeer" <i class="fa fa-mastodon" aria-hidden="true"><span>Mastodon </span></a></li>
-                 <!--<li><a href="https://twitter.com/AldayelAbeer" class="ai ai-twitter-square ai-3x"><span>Twitter</span></a></li>-->
-                <li><a href="https://github.com/AbeerAldayel" class="icon icon-github"><span>Github</span></a></li>
-                <!--<li><a href="https://github.com/AbeerAldayel" class="ai ai-Github-square ai-3x"><span>Github</span></a></li>-->
-                <!--<li><a href="https://scholar.google.com/citations?user=Ab-6howAAAAJ&hl=en" class="icon icon-search"><span>Google Scholar</span></a></li>-->
-                <!-- ai-3x -->
-                <li><a href="https://scholar.google.com/citations?user=Ab-6howAAAAJ&hl=en" class="ai ai-google-scholar ai-lg"><span>Google Scholar</span></a></li>
-                <!--<li><a href="mailto:a.aldayel@ed.ac.uk" class="ai ai-envelope-square ai-3x"><span>Email</span></a></li> -->
-		<li><a href="mailto:aabeer@ksu.edu.sa" class="icon icon-envelope"><span>Email</span></a></li>
-               <!-- <li><a href="https://www.threads.net/@abeer_d" <i class="fa-brands fa-threads"></i> <span>Threads </span></a></li>-->
-		
-	</ul> 
-    <div align="center"> <a href='https://freehitcounters.org/'>Counter</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=3845917d2a9f38aab07e535244f8d53945620751'></script>
-        <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/385649/t/2 "></script> 
+<header class="site-header">
+    <div class="identity">
+        <h1>Abeer Ibrahim Aldayel</h1>
+        <p class="subtitle">Assistant Professor | NLP • Computational Social Science • Responsible AI</p>
+        <a class="email" href="mailto:aabeer@ksu.edu.sa">aabeer@ksu.edu.sa</a>
     </div>
-	
-<p>&copy;  All rights reserved. |  Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
-</div>
+</header>
+
+<nav class="main-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Research.html">Research</a></li>
+        <li><a href="Publications.html">Publications</a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
+        <li><a href="Media.html">Media</a></li>
+        <li><a href="Teaching.html">Teaching/Supervision</a></li>
+        <li><a href="Personal.html">Personal</a></li>
+        <li><a href="Contact.html">Contact Me</a></li>
+    </ul>
+</nav>
+
+<div class="hero-banner"></div>
+
+<main class="page">
+
+    <aside class="sidebar">
+
+        <div class="social-links">
+            <a href="mailto:aabeer@ksu.edu.sa" class="icon icon-envelope"> Email</a>
+            <a href="https://sciencemastodon.com/@Aldayelabeer"> Mastodon</a>
+            <a href="https://twitter.com/AldayelAbeer" class="icon icon-twitter"> Twitter</a>
+        </div>
+
+        <h2>News Log</h2>
+
+        <div class="news-item">
+            <div class="news-date">5-11<br>2025</div>
+            <div>Gave a talk “Beyond Accuracy: Robust Representations for Social Norms Alignment in Human–AI Modeling”, @KSU-CCIS Research talk.</div>
+        </div>
+
+        <div class="news-item">
+            <div class="news-date">26-10<br>2025</div>
+            <div>Paper accepted to appear at AACL 2025 Findings: <a href="https://arxiv.org/abs/2507.20264">EMBRACE</a>.</div>
+        </div>
+
+        <div class="news-item">
+            <div class="news-date">12-09<br>2025</div>
+            <div>New pre-print: <a href="https://arxiv.org/abs/2509.10184?ref=lowintech.com">Incongruent Positivity</a>.</div>
+        </div>
+
+        <div class="news-item">
+            <div class="news-date">27-07<br>2025</div>
+            <div>New pre-print: <a href="https://arxiv.org/abs/2507.20264">EMBRACE: Shaping Inclusive Opinion Representation</a>.</div>
+        </div>
+
+        <div class="news-item">
+            <div class="news-date">26-06<br>2025</div>
+            <div>Best Senior Program Chair recognition, ICWSM/AAAI 2026.</div>
+        </div>
+
+    </aside>
+
+    <section class="content">
+
+        <h2>About me and my research interests</h2>
+
+        <p>
+            I am an Assistant Professor at the College of Computer and Information Sciences,
+            King Saud University. My research lies at the intersection of
+            <strong>Computational Social Science, Natural Language Processing (NLP), and Responsible AI</strong>,
+            where I develop computational methods to evaluate the social and normative dimensions of language.
+        </p>
+
+        <p>
+            My work focuses on multilingual and socially grounded language processing, with particular emphasis
+            on modeling and evaluating language use across diverse social and cultural contexts. I study phenomena
+            such as bias, abusive and harmful language, misinformation, and implicit social meanings.
+        </p>
+
+        <p>
+            A core goal of my research is to move beyond surface-level language analysis toward representing
+            implicit values and dynamics embedded in language, in support of more responsible and socially aligned
+            AI systems.
+        </p>
+
+        <div class="note">
+            I am especially interested in socially aware and fairness-oriented NLP, including benchmark design,
+            cross-cultural variation, normative plurality, and responsible AI evaluation.
+        </div>
+
+        <h3>Highlights of my research so far</h3>
+
+        <dl class="highlight-list">
+            <dt>Computational Social Science and Natural Language Processing</dt>
+            <dd>Social bias, multilingual cultural alignment, hate speech, counter-speech, stance detection, and social meaning evaluation.</dd>
+
+            <dt>Natural Language Processing</dt>
+            <dd>Cross-lingual modeling, paraphrasing, readability assessment, rumor veracity detection, and socially aware language technologies.</dd>
+        </dl>
+
+        <h3>More about my recent research</h3>
+
+        <p>
+            More about my most recent research is available on
+            <a href="https://abeeraldayel.github.io/Publications.html">this page</a>.
+        </p>
+
+        <p>
+            I received my Ph.D. in August 2021 from the University of Edinburgh,
+            <a href="http://web.inf.ed.ac.uk/ilcc">the Institute for Language, Cognition and Communication</a>
+            at the School of Informatics, as a member of the
+            <a href="http://smash.inf.ed.ac.uk/">SMASH research group</a>.
+        </p>
+
+        <p>
+            Before starting my Ph.D., I earned a BSc and MSc in Computer and Information Sciences from
+            King Saud University. My master’s thesis focused on query paraphrasing for information retrieval.
+        </p>
+
+        <p>
+            📚 My personal interests include learning different languages and reading.
+            Recommend me a book for my reading list <a href="https://abeeraldayel.github.io/Personal.html">here</a>.
+        </p>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="contact">
+        <a href="https://twitter.com/AldayelAbeer" class="icon icon-twitter">Twitter</a>
+        <a href="https://sciencemastodon.com/@Aldayelabeer">Mastodon</a>
+        <a href="https://github.com/AbeerAldayel" class="icon icon-github">Github</a>
+        <a href="https://scholar.google.com/citations?user=Ab-6howAAAAJ&hl=en" class="ai ai-google-scholar">Google Scholar</a>
+        <a href="mailto:aabeer@ksu.edu.sa" class="icon icon-envelope">Email</a>
+    </div>
+
+    <p>&copy; All rights reserved. Abeer Ibrahim Aldayel.</p>
+</footer>
+
 </body>
 </html>
