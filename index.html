@@ -212,7 +212,63 @@ a:hover {
 .footer .contact a {
     margin: 0 10px;
 }
+.scope-box {
+    margin: 32px 0;
+    border: 1px solid #eadfda;
+    border-radius: 10px;
+    background: #fffaf8;
+    overflow: hidden;
+}
 
+.scope-box summary {
+    cursor: pointer;
+    padding: 18px 22px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #7a3434;
+    list-style: none;
+}
+
+.scope-box summary::-webkit-details-marker {
+    display: none;
+}
+
+.scope-box summary::after {
+    content: "+";
+    float: right;
+    font-size: 22px;
+    color: #9b4b45;
+}
+
+.scope-box[open] summary::after {
+    content: "–";
+}
+
+.scope-box .scope-content {
+    padding: 0 22px 22px;
+    font-size: 15.5px;
+    color: #444;
+    line-height: 1.7;
+}
+
+.phd-card {
+    margin-top: 36px;
+    padding: 28px 32px;
+    border-left: 5px solid #9b4b45;
+    background: #fafafa;
+    border-radius: 8px;
+}
+
+.phd-card h3 {
+    margin-top: 0;
+    color: #222;
+    font-size: 23px;
+}
+
+.phd-card p {
+    font-size: 17px;
+    line-height: 1.75;
+}
 /* Responsive */
 @media (max-width: 850px) {
     .identity h1 {
@@ -242,6 +298,7 @@ a:hover {
         gap: 35px;
     }
 }
+
 </style>
 </head>
 
@@ -336,6 +393,26 @@ a:hover {
             I am especially interested in socially aware and fairness-oriented NLP, including benchmark design,
             cross-cultural variation, normative plurality, and responsible AI evaluation.
         </div>
+        <details class="scope-box">
+    <summary>Research scope and fit</summary>
+
+    <div class="scope-content">
+        <p>
+            To help clarify research fit: I am not currently interested in monolingual or
+            polyglossia/dialect-focused work, including ArabicNLP, ArabicNetwork,
+            ArabicHCI, Arabic processing, gaming, religious studies, network science,
+            healthcare/biology, pandemic/COVID-19 applications, educational apps,
+            applied science applications, political analysis, privacy applications,
+            policy, sustainability, cybersecurity, or startup-oriented projects.
+        </p>
+
+        <p>
+            Please see my <a href="https://abeeraldayel.github.io/FAQ.html">FAQ page</a>
+            and my <a href="https://abeeraldayel.github.io/Publications.html">recent research</a>
+            for a clearer view of my current research direction.
+        </p>
+    </div>
+</details>
 
         <h3>Highlights of my research so far</h3>
 
@@ -354,12 +431,42 @@ a:hover {
             <a href="https://abeeraldayel.github.io/Publications.html">this page</a>.
         </p>
 
-        <p>
-            I received my Ph.D. in August 2021 from the University of Edinburgh,
-            <a href="http://web.inf.ed.ac.uk/ilcc">the Institute for Language, Cognition and Communication</a>
-            at the School of Informatics, as a member of the
-            <a href="http://smash.inf.ed.ac.uk/">SMASH research group</a>.
-        </p>
+       
+        <div class="phd-card">
+    <h3>Academic background</h3>
+
+    <p>
+        I received my Ph.D. in August 2021 from the University of Edinburgh,
+        where I was affiliated with the
+        <a href="http://web.inf.ed.ac.uk/ilcc">Institute for Language, Cognition and Communication</a>
+        at the School of Informatics, and was a member of the
+        <a href="http://smash.inf.ed.ac.uk/">SMASH research group</a>.
+    </p>
+
+    <p>
+        My doctoral work addressed a fundamental challenge in stance detection:
+        how to understand stance in complex, real-world social media environments.
+        The thesis developed computational models that examine the interaction
+        between language, sentiment, and social dynamics, while also motivating
+        more responsible and context-aware NLP evaluation frameworks.
+    </p>
+
+    <p>
+        My work has been covered in
+        <a href="https://abeeraldayel.github.io/Media.html">international media</a>
+        for its relevance to social influence and trustworthy AI. Alongside my
+        main research, I also contributed to projects on hybrid language–behavior
+        modeling for suicide risk assessment and rumor veracity detection through
+        conversational modeling.
+    </p>
+
+    <p>
+        Before my Ph.D., I earned both my BSc and MSc in Computer and Information
+        Sciences from King Saud University. My master’s thesis focused on query
+        paraphrasing for information retrieval, and I also worked as a research
+        assistant on readability identification.
+    </p>
+</div>
 
         <p>
             Before starting my Ph.D., I earned a BSc and MSc in Computer and Information Sciences from
