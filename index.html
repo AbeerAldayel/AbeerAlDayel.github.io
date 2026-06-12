@@ -10,16 +10,19 @@
 <meta name="description" content="Abeer Ibrahim Aldayel - Assistant Professor, NLP, Computational Social Science, Responsible AI" />
 
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"/>
 
 <style>
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
     font-family: "Source Sans Pro", Arial, sans-serif;
-    background: #fff;
+    background: #ffffff;
     color: #2b2b2b;
     line-height: 1.65;
 }
@@ -29,34 +32,65 @@ a {
     text-decoration: none;
 }
 
-a:hover { text-decoration: underline; }
-
-/* Header */
-.site-header {
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 36px 32px 22px;
-    text-align: center;
+a:hover {
+    text-decoration: underline;
 }
 
-.logo-img {
-    max-width: 560px;
-    width: 80%;
+/* Hero header: name + banner side by side */
+.hero-header {
+    max-width: 1180px;
+    margin: 42px auto 34px;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+
+.hero-text {
+    flex: 0 0 36%;
+}
+
+.hero-text h1 {
+    margin: 0;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 52px;
+    line-height: 1.05;
+    font-weight: 600;
+    letter-spacing: -0.6px;
+    color: #3f3a37;
+}
+
+.position {
+    margin: 18px 0 12px;
+    font-size: 19px;
+    color: #555;
+    line-height: 1.55;
+}
+
+.email {
+    display: inline-block;
+    margin-top: 4px;
+    color: #8b3a3a;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto 16px;
+    border-radius: 8px;
+    opacity: 0.93;
 }
 
-.header-email {
-    font-size: 17px;
-    font-weight: 600;
-    color: #8b3a3a;
-}
-
-/* Menu */
+/* Navigation */
 .main-nav {
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
 }
 
 .main-nav ul {
@@ -86,7 +120,7 @@ a:hover { text-decoration: underline; }
 /* Main layout */
 .page {
     max-width: 1180px;
-    margin: 38px auto 70px;
+    margin: 42px auto 70px;
     padding: 0 32px;
     display: grid;
     grid-template-columns: 290px 1fr;
@@ -234,13 +268,24 @@ a:hover { text-decoration: underline; }
 }
 
 /* Mobile */
-@media (max-width: 850px) {
-    .site-header {
-        padding: 28px 22px 18px;
+@media (max-width: 900px) {
+    .hero-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 26px;
+        margin-top: 30px;
     }
 
-    .logo-img {
-        width: 95%;
+    .hero-text {
+        flex: none;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .position {
+        font-size: 17px;
     }
 
     .main-nav ul {
@@ -256,7 +301,7 @@ a:hover { text-decoration: underline; }
     .page {
         grid-template-columns: 1fr;
         gap: 35px;
-        margin-top: 30px;
+        margin-top: 34px;
     }
 }
 </style>
@@ -264,9 +309,22 @@ a:hover { text-decoration: underline; }
 
 <body>
 
-<header class="site-header">
-    <img class="logo-img" src="images/abeerlogo.png" alt="Abeer Ibrahim Aldayel - Assistant Professor, College of Computer and Information Sciences, King Saud University">
-    <a class="header-email" href="mailto:aabeer@ksu.edu.sa">aabeer@ksu.edu.sa</a>
+<header class="hero-header">
+    <div class="hero-text">
+        <h1>Abeer Ibrahim Aldayel</h1>
+
+        <p class="position">
+            Assistant Professor<br>
+            College of Computer and Information Sciences<br>
+            King Saud University
+        </p>
+
+        <a class="email" href="mailto:aabeer@ksu.edu.sa">aabeer@ksu.edu.sa</a>
+    </div>
+
+    <div class="hero-image">
+        <img src="images/bg01.jpg" alt="Abstract geometric banner">
+    </div>
 </header>
 
 <nav class="main-nav">
