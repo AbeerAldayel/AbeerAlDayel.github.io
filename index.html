@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=1180"  />
+<meta name="viewport" content="width=1180" />
 
-<title>Abeer Ibraheem Aldayel </title>
+<title>Abeer Ibraheem Aldayel</title>
 
 <meta name="keywords" content="NLP, Computational Social Science, Responsible AI, Natural Language Processing" />
 <meta name="description" content="Abeer Ibraheem Aldayel - Assistant Professor, NLP, Computational Social Science, Responsible AI" />
@@ -15,9 +15,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"/>
 
 <style>
-* {
-    box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
     margin: 0;
@@ -32,9 +30,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
+a:hover { text-decoration: underline; }
 
 /* Top banner */
 .hero-banner {
@@ -72,24 +68,32 @@ a:hover {
 .identity h1 {
     margin: 0;
     font-family: "Playfair Display", Georgia, serif;
-    font-size: 32px;
+    font-size: 31px;
     font-weight: 600;
-    line-height: 1.08;
+    line-height: 1.02;
+    letter-spacing: -0.5px;
     color: #3f3a37;
-    letter-spacing: -0.3px;
 }
-.identity .possition {
-    display: inline-block;
-    margin-top: 7px;
-    font-size: 15px;
+
+.identity-meta {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.identity .position {
+    font-size: 13.5px;
     font-weight: 600;
-    color: #8b3a3a;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #8a7771;
 }
+
 .identity .email {
-    display: inline-block;
-    margin-top: 7px;
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 400;
     color: #8b3a3a;
 }
 
@@ -136,12 +140,38 @@ a:hover {
 }
 
 .social-links {
-    margin-bottom: 34px;
+    margin-bottom: 28px;
     font-size: 16px;
 }
 
 .social-links a {
     margin-right: 14px;
+}
+
+/* Scrollable News Log */
+.news-log {
+    max-height: 480px;
+    overflow-y: auto;
+    padding-right: 8px;
+    margin-top: 14px;
+}
+
+.news-log::-webkit-scrollbar {
+    width: 6px;
+}
+
+.news-log::-webkit-scrollbar-track {
+    background: #f5f5f5;
+    border-radius: 10px;
+}
+
+.news-log::-webkit-scrollbar-thumb {
+    background: #c6b6b1;
+    border-radius: 10px;
+}
+
+.news-log::-webkit-scrollbar-thumb:hover {
+    background: #9b4b45;
 }
 
 .news-item {
@@ -277,9 +307,6 @@ a:hover {
 .footer .contact a {
     margin: 0 10px;
 }
-
-/* Mobile */
-
 </style>
 </head>
 
@@ -292,9 +319,12 @@ a:hover {
 
     <div class="identity-nav">
         <div class="identity">
-            <h1>Abeer Ibraheem Aldayel</h1> 
-            <a class="possition" >CCIS, KSU</a>
-            <a class="email" href="mailto:aabeer@ksu.edu.sa">aabeer@ksu.edu.sa</a>
+            <h1>Abeer Ibraheem Aldayel</h1>
+
+            <div class="identity-meta">
+                <span class="position">CCIS · KSU</span>
+                <a class="email" href="mailto:aabeer@ksu.edu.sa">aabeer@ksu.edu.sa</a>
+            </div>
         </div>
 
         <nav class="main-nav">
@@ -324,29 +354,33 @@ a:hover {
 
         <h2>News Log</h2>
 
-        <div class="news-item">
-            <div class="news-date">5-11<br>2025</div>
-            <div>Gave a talk “Beyond Accuracy: Robust Representations for Social Norms Alignment in Human–AI Modeling”, @KSU-CCIS Research talk.</div>
-        </div>
+        <div class="news-log">
 
-        <div class="news-item">
-            <div class="news-date">26-10<br>2025</div>
-            <div>Paper accepted to appear at AACL 2025 Findings: <a href="https://arxiv.org/abs/2507.20264">EMBRACE</a>.</div>
-        </div>
+            <div class="news-item">
+                <div class="news-date">5-11<br>2025</div>
+                <div>Gave a talk “Beyond Accuracy: Robust Representations for Social Norms Alignment in Human–AI Modeling”, @KSU-CCIS Research talk.</div>
+            </div>
 
-        <div class="news-item">
-            <div class="news-date">12-09<br>2025</div>
-            <div>New pre-print: <a href="https://arxiv.org/abs/2509.10184?ref=lowintech.com">Incongruent Positivity</a>.</div>
-        </div>
+            <div class="news-item">
+                <div class="news-date">26-10<br>2025</div>
+                <div>Paper accepted to appear at AACL 2025 Findings: <a href="https://arxiv.org/abs/2507.20264">EMBRACE</a>.</div>
+            </div>
 
-        <div class="news-item">
-            <div class="news-date">27-07<br>2025</div>
-            <div>New pre-print: <a href="https://arxiv.org/abs/2507.20264">EMBRACE: Shaping Inclusive Opinion Representation</a>.</div>
-        </div>
+            <div class="news-item">
+                <div class="news-date">12-09<br>2025</div>
+                <div>New pre-print: <a href="https://arxiv.org/abs/2509.10184?ref=lowintech.com">Incongruent Positivity</a>.</div>
+            </div>
 
-        <div class="news-item">
-            <div class="news-date">26-06<br>2025</div>
-            <div>Best Senior Program Chair recognition, ICWSM/AAAI 2026.</div>
+            <div class="news-item">
+                <div class="news-date">27-07<br>2025</div>
+                <div>New pre-print: <a href="https://arxiv.org/abs/2507.20264">EMBRACE: Shaping Inclusive Opinion Representation</a>.</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-date">26-06<br>2025</div>
+                <div>Best Senior Program Chair recognition, ICWSM/AAAI 2026.</div>
+            </div>
+
         </div>
 
     </aside>
@@ -383,6 +417,7 @@ a:hover {
 
         <details class="scope-box">
             <summary>Research scope and fit</summary>
+
             <div class="scope-content">
                 <p>
                     To help clarify research fit: I am not interested in monolingual or
@@ -471,6 +506,7 @@ a:hover {
         <a href="https://scholar.google.com/citations?user=Ab-6howAAAAJ&hl=en" class="ai ai-google-scholar">Google Scholar</a>
         <a href="mailto:aabeer@ksu.edu.sa" class="icon icon-envelope">Email</a>
     </div>
+
     <div align="center">
         <a href='https://freehitcounters.org/'>Counter</a>
         <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=3845917d2a9f38aab07e535244f8d53945620751'></script>
