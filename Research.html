@@ -1,152 +1,324 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!--
-Design by TEMPLATED
-http://templated.co
-Released for free under the Creative Commons Attribution License
-
-Name       : Saleable 
-Description: A two-column, fixed-width design with dark color scheme.
-Version    : 1.0
-Released   : 20131118
-
--->
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Abeer AlDayel</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=1180" />
+
+<title>Research | Abeer Ibraheem Aldayel </title>
+
+<meta name="keywords" content="NLP, Computational Social Science, Responsible AI, Natural Language Processing, Research" />
+<meta name="description" content="Research activities, reviewing, awards, work experience, and talks by Abeer Ibraheem Aldayel." />
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"/>
-<link href="default.css" rel="stylesheet" type="text/css" media="all" />
-<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"/>
 
-<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+<style>
+* {
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    background: #ffffff;
+    color: #2b2b2b;
+    line-height: 1.65;
+}
+
+a {
+    color: #8b3a3a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Top banner */
+.hero-banner {
+    max-width: 1180px;
+    height: 150px;
+    margin: 36px auto 26px;
+    padding: 0 32px;
+}
+
+.hero-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    opacity: 0.94;
+}
+
+/* Identity + menu */
+.identity-nav {
+    max-width: 1180px;
+    margin: 0 auto 38px;
+    padding: 0 32px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.identity {
+    flex-shrink: 0;
+}
+
+.identity h1 {
+    margin: 0;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.08;
+    color: #3f3a37;
+    letter-spacing: -0.3px;
+}
+
+.identity .position,
+.identity .email {
+    display: inline-block;
+    margin-top: 7px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #8b3a3a;
+}
+
+.identity .position {
+    margin-right: 12px;
+    color: #6a5550;
+}
+
+/* Menu */
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 4px;
+}
+
+.main-nav a {
+    display: block;
+    padding: 10px 11px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #222;
+    text-decoration: none;
+}
+
+.main-nav a:hover,
+.main-nav .active {
+    color: #8b3a3a;
+}
+
+/* Page */
+.page {
+    max-width: 1180px;
+    margin: 0 auto 70px;
+    padding: 0 32px;
+}
+
+.section-signature {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 34px;
+    font-style: italic;
+    font-weight: 300;
+    color: #7a3434;
+    letter-spacing: 0.7px;
+    margin-bottom: 4px;
+    opacity: 0.95;
+}
+
+.content {
+    font-size: 18px;
+}
+
+.content h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 22px;
+    color: #222;
+}
+
+.content h3 {
+    font-size: 23px;
+    margin-top: 34px;
+    margin-bottom: 14px;
+    color: #835c3b;
+}
+
+.intro-note {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    background: #faf7f5;
+    border-left: 4px solid #9b4b45;
+    padding: 16px 20px;
+    margin: 24px 0 32px;
+    border-radius: 6px;
+}
+
+.research-card {
+    margin: 28px 0;
+    padding: 28px 32px;
+    background: #fafafa;
+    border-left: 5px solid #9b4b45;
+    border-radius: 8px;
+}
+
+.research-card h3 {
+    margin-top: 0;
+}
+
+.research-card ul {
+    margin: 0;
+    padding-left: 22px;
+}
+
+.research-card li {
+    margin-bottom: 10px;
+}
+
+.research-card p {
+    margin: 0 0 13px;
+}
+
+.footer {
+    border-top: 1px solid #eee;
+    text-align: center;
+    padding: 35px 20px;
+    font-size: 15px;
+    color: #777;
+}
+
+.footer .contact a {
+    margin: 0 10px;
+}
+</style>
 </head>
+
 <body>
-<div id="header" class="container">
-	<div id="logo">
-		<h1><a href="#">Abeer AlDayel</a></h1>
-                <a href="#">aabeer (at) ksu.edu.sa</a>
-	</div>
-	<div id="menu">
-		<ul>
-			<li><a href="index.html" accesskey="1" title="">Home</a></li>
-			<li><a href="Research.html" accesskey="2" title="">Research</a></li>
-			<li><a href="Publications.html" accesskey="3" title="">Publications</a></li>
-                        <li><a href="FAQ.html" accesskey="4" title="">FAQ</a></li>
-                        <li><a href="Media.html" accesskey="5" title="">Media</a></li>
-			<li><a href="Teaching.html" accesskey="6" title="">Teaching/Supervision</a></li>
-                        <li><a href="Personal.html" accesskey="7" title="">Personal</a></li>    
-			<li><a href="Contact.html" accesskey="8" title="">Contact Me</a></li>
-		</ul>
-	</div>
-</div>
-<div id="banner-wrapper">
-</div>
-<div id="page-wrapper">
 
-<div id="footer-wrapper">
-    
-	<div id="footer" class="container">
-           
-		
-		<div id="fbox33">
-                    
-                    <section><h2>Research Activities and Work Experience </h2> 
-                       <p> I am not interested in monolingual/dialects, aka. Arabic (NLP/ Social Network) applications! </p>
-																								 <h3>Reviewer in conferences:</h3>
-                        <ul>
-                             <li> <p> The International AAAI Conference on Web and Social Media (ICWSM), 2019-2024 </p></li>
-                             <li> <p>Reliable Evaluation of LLMs for Factual Information (REAL-Info), ICWSM, 2024</p> </li>
-                             <li><p>Empirical Methods in Natural Language Processing (EMNLP),2019, 2024</p> </li>
-                              <li> <p> NLP for Positive Impact Workshop, EMNLP, 2022, 2024 </p> </li>
-                             <li> <p> Novel Evaluation Approaches for Text Classification Systems on Social Media (NEATCLasS), 2022, 2023 </p> </li>                        																										
-                             <li> <p> LREC COLING 2024 Social Processing Track, 2024 </p> </li>
-<li> <p> Workshop on Insights from Negative Results in NLP, EMNLP, 2021 </p> </li>
-
-                            <li> <p> The Web Conference (WWW), 2021. </p></li>
-       
-                            <li> <p> The ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), 2020,2021. </p>   </li>
-                          
-                               <li>   <p> The Arabic Natural Language Processing Workshop,  <a href="https://sites.google.com/a/nyu.edu/wanlp2017/" rel="nofollow"> ACL - WANLP, 2017, 2018. </a> </p> </li>                                                                   
-                             <li> <p> ACM Web Science Conference <a href="https://websci20.webscience.org/" rel="nofollow"> websci-2020.</a> </p></li>
-                          
-                  
-                        </ul>  
-                        <h3>Reviewer in Journals</h3>
-                        <ul>
-                             
-                           <li> <p> Information Processing & Management (IP&M) </p></li>
-                        </ul>
-                    </section>
-                    
-                    
-                    
-                    <section> <h3> Awards/Other recognitions</h3> 
-                        <p> Outstanding Reviewer,<a href="https://aclanthology.org/2024.findings-emnlp.0.pdf">EMNLP,2024</a></p>
-                        <p> Received the Best Reviewer Award in ICWSM, 2020, 2021,2022.</p>
-                       <p> Teaching and Advising Excellence Award, KSU, King Saud University, Collage of Computer and Information Sciences, IT department, 2017.  </p>
-</section>
-                    <section> <h3> Work Experience </h3> 
-                    <p> Assistant Professor,  College of Computer and Information Sciences, King Saud University, 2021.8 - Present</p>
-                    <p> Research Assistant, <a href="https://smash.inf.ed.ac.uk/"> SMASH Group </a>, working on rumours veracity in replies set, a project with Big IR group, 2020.7 - 2020.12</p>
-                    <p> Demonstrator, INFR11145: Text Technologies for Data Science, 2018.9 - 2020.12 </p>
-                    <p> Research Assistant, <a href="https://iwan.ksu.edu.sa/en"> IWAN Group </a>, working on readability assessment, 2014.11 - 2017.8  I'm not working with that group / I am not interested with monolingual/ dialect (Arabic NLP) applications, or others!</p>
-                    <p> Lecturer, College of Computer and Information Sciences, King Saud University, 2013.11 - 2018.5</p>
-                    </section>
-                     
-                    
-                    <section> <h3>Organizing Committee member </h3> 
-                        
-                        <p> Co-chair the ICWSM Data Challenge, <a href="https://sites.google.com/view/icwsm2023datachallenge/home" rel="nofollow"> Temporal Data </a>, 5-6-2023, ICWSM 2023 </p>
-                      
-                            
-                       <p> "Detection and Characterization of Stance on Social Media",<a href="https://www.icwsm.org/2020" rel="nofollow"> (Tutorial) </a>, 08-6-2020,ICWSM 2020 </p>
-                      
-                            
-                             
-                    </section>
-                    
-                    <section> <h3>Talks | Seminars | Tutorials </h3> 
-                        <ul>
-																									 <li> <p>Beyond Accuracy: Robust Representations for Social Norms Alignment in Human–AI Modeling", @KSU-CCIS Research talk, 5-11-2025.</p></li>
-                            <li> <p>Talk @ Saudi Digital Academy for Data Science, "Efficacy of Social Aspect and Human-Centered Paradigm From Real-World Scenarios to LLM", <a href="https://sda.edu.sa/bootcamp"> SDA academy  </a>, 24-4-2023. </p></li>
-                            <li> <p> Computational Social Science For NLP: Closer Look at Reliability through Feedback & Human-Centered Values, SDAIA Academy arranged by <a href="https://thakaa.edu.sa/en/"> AI Center of Advanced Studies Thakaa </a>, 29-05-2023.  </p>
-                            </li>
-                             <li> <p> "Social Computing through the lens of NLP: a closer look at the Opportunities, Reliability and Beyond.", 29-10-2021. <a href="https://www.meetup.com/dair-ai/events/281199389" rel="nofollow"> Women in NLP Meetup </a>  </p>
-                            </li>
-                            <li> <p> (Tutorial) "Detection and Characterization of Stance on Social Media", 08-6-2020.<a href="https://www.icwsm.org/2020" rel="nofollow"> ICWSM 2020.</a> </p></li>
-                            
-                            <li> <p> "MADAD: Arabic Annotation Tool", 23-10-2015 ,IWAN Research group, at King Saud University. <a href="https://www.slideshare.net/AbeerAlDayel1/madad-arabic-annotation-tool-for-arabic-text" rel="nofollow"> Slides </a>  </p>
-                            </li>
-                            <li>    <p>Developing Arabic test collection for IR Evaluation, 15-3-2014 <a href="http://prezi.com/b67h_mqgumxf/?utm_campaign=share&utm_medium=copy" rel="nofollow"> Slides </a>  </p>
-                            </li>
-                            <li>  <p> "Arabic Information Retrieval using Enhanced Query Paraphrasing Method", 23-8-2013 ,IWAN Research group, at King Saud University. <a href="https://prezi.com/lnagm9a7oknb/2nd-finalmsc-thesis-ppt">Slides</a>  </p>
-                            </li>
-                        </ul>            
-                    </section>
-                        
-                      
-	</div>
-</div>
+<header>
+    <div class="hero-banner">
+        <img src="images/bg01.jpg" alt="Abstract geometric banner">
     </div>
-<div id="copyright">
-	<ul class="contact">
-		<li><a href="https://twitter.com/AldayelAbeer" class="icon icon-twitter"><span>Twitter</span></a></li>
-                 <!--<li><a href="https://twitter.com/AldayelAbeer" class="ai ai-twitter-square ai-3x"><span>Twitter</span></a></li>-->
-                <li><a href="https://github.com/AbeerAldayel" class="icon icon-github"><span>Github</span></a></li>
-                <!--<li><a href="https://github.com/AbeerAldayel" class="ai ai-Github-square ai-3x"><span>Github</span></a></li>-->
-                <!--<li><a href="https://scholar.google.com/citations?user=Ab-6howAAAAJ&hl=en" class="icon icon-search"><span>Google Scholar</span></a></li>-->
-                <!-- ai-3x -->
-                <li><a href="https://scholar.google.com/citations?user=Ab-6howAAAAJ&hl=en" class="ai ai-google-scholar ai-lg"><span>Google Scholar</span></a></li>
-                <!--<li><a href="mailto:a.aldayel@ed.ac.uk" class="ai ai-envelope-square ai-3x"><span>Email</span></a></li> -->
-		<li><a href="mailto:aabeer@ksu.edu.sa" class="icon icon-envelope"><span>Email</span></a></li>
-		
-	</ul>
-	
-	<p>&copy;  All rights reserved. |  Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
-</div>
+
+    <div class="identity-nav">
+        <div class="identity">
+            <h1>Abeer Ibraheem Aldayel</h1>
+            <span class="position">CCIS, KSU</span>
+            <a class="email" href="mailto:aabeer@ksu.edu.sa">aabeer@ksu.edu.sa</a>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="Research.html">Research</a></li>
+                <li><a href="Publications.html">Publications</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="Media.html">Media</a></li>
+                <li><a href="Teaching.html">Teaching/Supervision</a></li>
+                <li><a href="Personal.html">Personal</a></li>
+                <li><a href="Contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="page">
+
+    <section class="content">
+
+        <div class="section-signature">Research</div>
+
+        <h2>Research Activities and Work Experience</h2>
+
+        <div class="intro-note">
+            My current research focuses on socially aware NLP, computational social science, multilingual and cross-cultural evaluation, and responsible AI. I am not currently interested in monolingual or dialect-focused Arabic NLP applications.
+        </div>
+
+        <div class="research-card">
+            <h3>Reviewer in Conferences</h3>
+            <ul>
+                <li>The International AAAI Conference on Web and Social Media (ICWSM), 2019–2024.</li>
+                <li>Reliable Evaluation of LLMs for Factual Information (REAL-Info), ICWSM, 2024.</li>
+                <li>Empirical Methods in Natural Language Processing (EMNLP), 2019, 2024.</li>
+                <li>NLP for Positive Impact Workshop, EMNLP, 2022, 2024.</li>
+                <li>Novel Evaluation Approaches for Text Classification Systems on Social Media (NEATCLasS), 2022, 2023.</li>
+                <li>LREC-COLING 2024 Social Processing Track, 2024.</li>
+                <li>Workshop on Insights from Negative Results in NLP, EMNLP, 2021.</li>
+                <li>The Web Conference (WWW), 2021.</li>
+                <li>The ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW), 2020, 2021.</li>
+                <li>The Arabic Natural Language Processing Workshop, <a href="https://sites.google.com/a/nyu.edu/wanlp2017/" rel="nofollow">ACL-WANLP</a>, 2017, 2018.</li>
+                <li>ACM Web Science Conference, <a href="https://websci20.webscience.org/" rel="nofollow">WebSci 2020</a>.</li>
+            </ul>
+        </div>
+
+        <div class="research-card">
+            <h3>Reviewer in Journals</h3>
+            <ul>
+                <li>Information Processing &amp; Management (IP&amp;M).</li>
+            </ul>
+        </div>
+
+        <div class="research-card">
+            <h3>Awards and Recognitions</h3>
+            <p>Outstanding Reviewer, <a href="https://aclanthology.org/2024.findings-emnlp.0.pdf">EMNLP 2024</a>.</p>
+            <p>Received the Best Reviewer Award in ICWSM, 2020, 2021, and 2022.</p>
+            <p>Teaching and Advising Excellence Award, King Saud University, College of Computer and Information Sciences, IT Department, 2017.</p>
+        </div>
+
+        <div class="research-card">
+            <h3>Work Experience</h3>
+            <p><strong>Assistant Professor</strong>, College of Computer and Information Sciences, King Saud University, Aug 2021–Present.</p>
+            <p><strong>Research Assistant</strong>, <a href="https://smash.inf.ed.ac.uk/">SMASH Group</a>, working on rumor veracity in replies, a project with the Big IR group, Jul 2020–Dec 2020.</p>
+            <p><strong>Demonstrator</strong>, INFR11145: Text Technologies for Data Science, Sep 2018–Dec 2020.</p>
+            <p><strong>Research Assistant</strong>, <a href="https://iwan.ksu.edu.sa/en">IWAN Group</a>, working on readability assessment, Nov 2014–Aug 2017.</p>
+            <p><strong>Lecturer</strong>, College of Computer and Information Sciences, King Saud University, Nov 2013–May 2018.</p>
+        </div>
+
+        <div class="research-card">
+            <h3>Organizing Committee Membership</h3>
+            <p>Co-chair, ICWSM Data Challenge: <a href="https://sites.google.com/view/icwsm2023datachallenge/home" rel="nofollow">Temporal Data</a>, ICWSM 2023.</p>
+            <p>Tutorial organizer, “Detection and Characterization of Stance on Social Media,” <a href="https://www.icwsm.org/2020" rel="nofollow">ICWSM 2020</a>.</p>
+        </div>
+
+        <div class="research-card">
+            <h3>Talks, Seminars, and Tutorials</h3>
+            <ul>
+                <li>“Beyond Accuracy: Robust Representations for Social Norms Alignment in Human–AI Modeling,” KSU-CCIS Research Talk, 5 Nov 2025.</li>
+                <li>“Efficacy of Social Aspect and Human-Centered Paradigm From Real-World Scenarios to LLM,” Saudi Digital Academy for Data Science, <a href="https://sda.edu.sa/bootcamp">SDA Academy</a>, 24 Apr 2023.</li>
+                <li>“Computational Social Science for NLP: Closer Look at Reliability through Feedback &amp; Human-Centered Values,” SDAIA Academy, arranged by <a href="https://thakaa.edu.sa/en/">AI Center of Advanced Studies Thakaa</a>, 29 May 2023.</li>
+                <li>“Social Computing through the Lens of NLP: A Closer Look at the Opportunities, Reliability and Beyond,” <a href="https://www.meetup.com/dair-ai/events/281199389" rel="nofollow">Women in NLP Meetup</a>, 29 Oct 2021.</li>
+                <li>Tutorial: “Detection and Characterization of Stance on Social Media,” <a href="https://www.icwsm.org/2020" rel="nofollow">ICWSM 2020</a>, 8 Jun 2020.</li>
+                <li>“MADAD: Arabic Annotation Tool,” IWAN Research Group, King Saud University, 23 Oct 2015. <a href="https://www.slideshare.net/AbeerAlDayel1/madad-arabic-annotation-tool-for-arabic-text" rel="nofollow">Slides</a>.</li>
+                <li>“Developing Arabic Test Collection for IR Evaluation,” 15 Mar 2014. <a href="http://prezi.com/b67h_mqgumxf/?utm_campaign=share&utm_medium=copy" rel="nofollow">Slides</a>.</li>
+                <li>“Arabic Information Retrieval using Enhanced Query Paraphrasing Method,” IWAN Research Group, King Saud University, 23 Aug 2013. <a href="https://prezi.com/lnagm9a7oknb/2nd-finalmsc-thesis-ppt">Slides</a>.</li>
+            </ul>
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="contact">
+        <a href="https://twitter.com/AldayelAbeer" class="icon icon-twitter">Twitter</a>
+        <a href="https://github.com/AbeerAldayel" class="icon icon-github">Github</a>
+        <a href="https://scholar.google.com/citations?user=Ab-6howAAAAJ&hl=en" class="ai ai-google-scholar">Google Scholar</a>
+        <a href="mailto:aabeer@ksu.edu.sa" class="icon icon-envelope">Email</a>
+    </div>
+
+    <p>&copy; All rights reserved. Abeer Ibraheem Aldayel.</p>
+</footer>
+
 </body>
 </html>
