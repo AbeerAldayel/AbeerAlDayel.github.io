@@ -155,12 +155,12 @@ a:hover { text-decoration: underline; }
     padding-right: 8px;
     margin-top: 14px;
 }*/
-#sidebar {
+
+.sidebar {
     position: sticky;
     top: 30px;
-    align-self: flex-start;
+    align-self: start;
 }
-
 .news-log {
     /* max-height: calc(100vh - 80px);*/
     max-height: 480px;
@@ -187,10 +187,11 @@ a:hover { text-decoration: underline; }
 
 .news-item {
     display: grid;
-    grid-template-columns: 72px 1fr;
+    grid-template-columns: 72px minmax(0, 1fr);
     gap: 14px;
     margin-bottom: 18px;
     font-size: 15px;
+    align-items: start;
 }
 
 .news-date {
@@ -201,6 +202,14 @@ a:hover { text-decoration: underline; }
     font-size: 13px;
     border-radius: 3px;
     line-height: 1.25;
+
+    align-self: start;
+    height: fit-content;
+}
+
+.news-item > div:last-child {
+    min-width: 0;
+    overflow-wrap: break-word;
 }
 
 .content {
@@ -374,7 +383,7 @@ a:hover { text-decoration: underline; }
             <a href="https://www.dropbox.com/scl/fi/k99wk6v0vzx47oa7mdsjz/LeeLab_talk2026_v2-16June.pdf?rlkey=czab377op73t6rn4fibytdsw3&dl=0">
                 <em> Evaluation Blind Spots: What Do Socially Aware Language Models Require?</em>
             </a>
-            
+            .
         </div>
     </div>
           <div class="news-item">      
