@@ -381,6 +381,155 @@ a:hover { text-decoration: underline; }
     margin-top: 20px;
     font-size: 16px;
 }
+
+/* Unified research-focus panel */
+.research-focus {
+    margin: 34px 0 30px;
+    overflow: hidden;
+    border: 1px solid #d8e2df;
+    border-radius: 12px;
+    background: #f7faf9;
+    box-shadow: 0 8px 24px rgba(44, 74, 68, 0.05);
+}
+
+.research-focus-header {
+    padding: 26px 30px 22px;
+    background: #e9f1ef;
+    border-bottom: 1px solid #d8e2df;
+}
+
+.research-focus-label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    color: #51746d;
+}
+
+.research-focus-header h3 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    line-height: 1.3;
+    color: #294842;
+}
+
+.research-focus-header p {
+    max-width: 760px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #4f625e;
+}
+
+.research-focus-content {
+    padding: 4px 30px;
+}
+
+.research-area {
+    display: grid;
+    grid-template-columns: 46px minmax(0, 1fr);
+    gap: 18px;
+    padding: 26px 0;
+}
+
+.research-number {
+    padding-top: 3px;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #719189;
+}
+
+.research-area-text h4 {
+    margin: 0 0 8px;
+    font-size: 20px;
+    line-height: 1.35;
+    color: #2f4944;
+}
+
+.research-area-text > p {
+    margin: 0;
+    font-size: 16.5px;
+    line-height: 1.72;
+    color: #3f4f4c;
+}
+
+.research-divider {
+    height: 1px;
+    margin-left: 64px;
+    background: #dce6e3;
+}
+
+.representative-work {
+    margin-top: 12px !important;
+    font-size: 15px !important;
+    color: #61706d !important;
+}
+
+.representative-work strong {
+    color: #425a55;
+}
+
+.representative-work a {
+    font-weight: 600;
+    color: #567f76;
+}
+
+.representative-work span {
+    margin: 0 5px;
+    color: #9aaba7;
+}
+
+.research-focus-footer {
+    padding: 15px 30px;
+    text-align: right;
+    background: #eef4f2;
+    border-top: 1px solid #d8e2df;
+}
+
+.research-focus-footer a {
+    font-size: 15px;
+    font-weight: 700;
+    color: #456d65;
+}
+
+.research-focus-footer a span {
+    margin-left: 5px;
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+    .research-focus-header,
+    .research-focus-content {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .research-area {
+        grid-template-columns: 1fr;
+        gap: 3px;
+    }
+
+    .research-divider {
+        margin-left: 0;
+    }
+
+    .research-number {
+        font-size: 15px;
+    }
+
+    .research-focus-header h3 {
+        font-size: 22px;
+    }
+
+    .research-focus-footer {
+        padding-left: 22px;
+        padding-right: 22px;
+        text-align: left;
+    }
+}
 </style>
 </head>
 
@@ -743,97 +892,92 @@ a:hover { text-decoration: underline; }
             where I develop computational methods to evaluate the social and normative dimensions of language towards responsible models.
         </p>
 
-       <section class="research-program">
+      <section class="research-focus">
 
-    <h3>Research Focus</h3>
+    <div class="research-focus-header">
+        <span class="research-focus-label">Research Focus</span>
 
-    <p class="research-intro">
-        My research program centers on three interconnected directions:
-    </p>
-
-    <div class="research-direction">
-        <h4>Social and Normative Evaluation</h4>
+        <h3>My research centers on two interconnected pillars</h3>
 
         <p>
-            I study how language models represent implicit social meanings,
-            norms, values, and interpersonal dynamics, with particular attention
-            to forms of misalignment that may not be captured by conventional
-            evaluation metrics.
-        </p>
-
-        <p class="selected-work">
-            <span>Selected recent work:</span>
-            <a href="https://ojs.aaai.org/index.php/ICWSM/article/view/42626">
-                Incongruent Positivity
-            </a>
-            ·
-            <a href="https://arxiv.org/abs/2507.20264">
-                EMBRACE
-            </a>
-            ·
-            <a href="https://aclanthology.org/2024.nlp4pi-1.6/">
-                Covert Bias
-            </a>
+            Across these directions, I study how language can be
+            evaluated and developed with greater awareness of social meaning,
+            cultural variation, and human values.
         </p>
     </div>
 
-    <div class="research-direction">
-        <h4>Culture and Multilingual Language Understanding</h4>
+    <div class="research-focus-content">
 
-        <p>
-            I examine how cultural meanings, narratives, and social positioning
-            vary across languages, and how multilingual language models preserve,
-            transform, or flatten these differences.
-        </p>
+        <article class="research-area">
+            <div class="research-number">01</div>
 
-        <p class="selected-work">
-            <span>Selected recent work:</span>
-            <a href="YOUR-PAPER-LINK">
-                Same Lesson, Different Story
-            </a>
-            ·
-            <a href="YOUR-CULTURELENS-LINK">
-                CultureLens
-            </a>
-        </p>
+            <div class="research-area-text">
+                <h4>Socially Aware and Trustworthy Evaluation</h4>
+
+                <p>
+                    My work centers on evaluation methods for examining how language models represent social norms, values, and interpersonal dynamics. A central goal of this work is to move beyond conventional benchmark evaluation toward assessing the implicit social meanings, contextual validity, and human-centered dimensions that underpin trustworthy and socially aligned models.
+                </p>
+
+                <p class="representative-work">
+                    <strong>Representative studies:</strong>
+                    <a href="https://ojs.aaai.org/index.php/ICWSM/article/view/42626">
+                        Incongruent Positivity
+                    </a>
+                    <span aria-hidden="true">·</span>
+
+                    <a href="https://aclanthology.org/2025.findings-ijcnlp.90/">
+                        EMBRACE
+                    </a>
+                    <span aria-hidden="true">·</span>
+
+                    <a href="https://aclanthology.org/2024.nlp4pi-1.6/">
+                        Covert Bias
+                    </a>
+                </p>
+            </div>
+        </article>
+
+        <div class="research-divider"></div>
+
+        <article class="research-area">
+            <div class="research-number">02</div>
+
+            <div class="research-area-text">
+                <h4>Cultural and Multilingual Language Understanding</h4>
+
+                <p>
+                    I investigate how cultural meanings, and social
+                    positioning vary across languages, and how multilingual
+                    language models preserve, or reconstruct these
+                    differences through cross-lingual modeling.
+                </p>
+
+                <p class="representative-work">
+                    <strong>Representative studies:</strong>
+                    <a href="https://arxiv.org/abs/2606.24610">
+                        Same Lesson, Different Story
+                    </a>
+                    <span aria-hidden="true">·</span>
+                    
+                </p>
+            </div>
+        </article>
+
     </div>
 
-    <div class="research-direction">
-        <h4>Trustworthy and Human-Centered Evaluation</h4>
-
-        <p>
-            I develop evaluation methodologies that incorporate contextual
-            validity, human judgment, uncertainty, and socially meaningful
-            outcomes into the assessment of language technologies.
-        </p>
-
-        <p class="selected-work">
-            <span>Selected recent work:</span>
-            <a href="YOUR-TOXICITY-INSPECTOR-LINK">
-                Toxicity Inspector
-            </a>
-            ·
-            <a href="https://arxiv.org/abs/2403.15449">
-                Persuasion Modes in Counter-Speech
-            </a>
-        </p>
+    <div class="research-focus-footer">
+        <a href="Publications.html">
+            Explore all publications
+            <span aria-hidden="true">→</span>
+        </a>
     </div>
-
-    <p class="research-more">
-        View my complete
-        <a href="Publications.html">publication record</a>.
-    </p>
 
 </section>
 
-        <p>
-            A core goal of my research is to move beyond surface-level language analysis toward representing
-            implicit values and dynamics embedded in language, in support of more responsible and socially aligned
-            models.
-        </p>
+  
 
         <div class="note">
-            I am especially interested in socially aware and fairness-oriented NLP, including evaluation design,
+           In one line! I am especially interested in socially aware and fairness-oriented NLP, including evaluation design,
             cross-cultural variation, normative plurality, and responsible AI evaluation.
         </div>
 
