@@ -255,19 +255,28 @@ a:hover { text-decoration: underline; }
     margin-right: 4px;
 }
 .scope-box {
-    margin: 32px 0;
-    border: 1px solid #eadfda;
+    margin: 28px 0 34px;
+    border: 1px solid #d8e3df;
     border-radius: 10px;
-    background: #fffaf8;
+    background: #f8fbfa;
     overflow: hidden;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.scope-box:hover {
+    border-color: #b8cec7;
+    box-shadow: 0 5px 18px rgba(56, 91, 82, 0.07);
 }
 
 .scope-box summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 18px 21px;
     cursor: pointer;
-    padding: 18px 22px;
-    font-size: 17px;
-    font-weight: 700;
-    color: #7a3434;
     list-style: none;
 }
 
@@ -275,23 +284,82 @@ a:hover { text-decoration: underline; }
     display: none;
 }
 
-.scope-box summary::after {
-    content: "+";
-    float: right;
-    font-size: 22px;
-    color: #9b4b45;
+.scope-summary-text {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
 }
 
-.scope-box[open] summary::after {
-    content: "–";
+.scope-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #34534d;
+}
+
+.scope-preview {
+    margin-top: 3px;
+    font-size: 14.5px;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #687a76;
+}
+
+.scope-action {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    flex-shrink: 0;
+    color: #52776f;
+}
+
+.scope-action-text {
+    font-size: 13.5px;
+    font-weight: 700;
+}
+
+.scope-icon {
+    display: grid;
+    width: 27px;
+    height: 27px;
+    place-items: center;
+    border: 1px solid #b8ccc7;
+    border-radius: 50%;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1;
+    background: #ffffff;
+    transition: transform 0.2s ease;
+}
+
+.scope-box[open] .scope-icon {
+    transform: rotate(45deg);
+}
+
+.scope-box[open] .scope-action-text::before {
+    content: "Hide details";
+    font-size: 13.5px;
+}
+
+.scope-box[open] .scope-action-text {
+    font-size: 0;
 }
 
 .scope-content {
-    padding: 0 22px 22px;
+    padding: 20px 22px 22px;
+    border-top: 1px solid #dce7e3;
+    background: #ffffff;
     font-size: 15.8px;
+    line-height: 1.7;
     color: #444;
 }
 
+.scope-content p:first-child {
+    margin-top: 0;
+}
+
+.scope-content p:last-child {
+    margin-bottom: 0;
+}
 .highlight-list dt {
     font-weight: 700;
     margin-top: 18px;
@@ -997,25 +1065,38 @@ a:hover { text-decoration: underline; }
         </div>
 
         <details class="scope-box">
-            <summary>Research scope and fit</summary>
+    <summary>
+        <span class="scope-summary-text">
+            <span class="scope-title">Research scope and fit</span>
+            <span class="scope-preview">
+                A brief guide to the research topics and collaborations that best align with my current work.
+            </span>
+        </span>
 
-            <div class="scope-content">
-                <p>
-                    To help clarify research fit: I am not interested in monolingual or
-                    polyglossia/dialect-focused work, including ArabicNLP, ArabicNetwork,
-                    ArabicHCI, Arabic processing, gaming, religious studies, network science,
-                    healthcare/biology, pandemic/COVID-19 applications, educational apps,
-                    applied science applications, political analysis, privacy applications,
-                    policy, sustainability, cybersecurity, or startup-oriented projects.
-                </p>
+        <span class="scope-action">
+            <span class="scope-action-text">View details</span>
+            <span class="scope-icon" aria-hidden="true">+</span>
+        </span>
+    </summary>
 
-                <p>
-                    Please see my <a href="https://abeeraldayel.github.io/FAQ.html">FAQ page</a>
-                    and my <a href="https://abeeraldayel.github.io/Publications.html">recent research</a>
-                    for a clearer view of my current research direction.
-                </p>
-            </div>
-        </details>
+    <div class="scope-content">
+        <p>
+            To help clarify research fit: I am not interested in monolingual or
+            polyglossia/dialect-focused work, including Arabic NLP, Arabic HCI,
+            gaming, religious studies, network science, healthcare or biology,
+            educational applications, political analysis, privacy applications,
+            policy, sustainability, cybersecurity, or startup-oriented projects.
+        </p>
+
+        <p>
+            Please see my
+            <a href="FAQ.html">FAQ page</a>
+            and
+            <a href="Publications.html">recent research</a>
+            for a clearer view of my current research direction.
+        </p>
+    </div>
+</details>
 
         
 
